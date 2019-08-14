@@ -374,3 +374,114 @@ template {
 [hidden] {
   display: none;
 }
+
+.banner__button {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.img {
+  display: block;
+  line-height: 0;
+  width: 100%;
+  height: auto;
+}
+
+.header {
+  position: absolute;
+  left: 18px;
+  top: 14px;
+}
+
+.container {
+  width: 445px;
+  margin: 0 auto;
+}
+
+.social {
+  display: none;
+}
+
+.social__svg {
+  width: 11px;
+  height: 11px;
+}
+
+.banner {
+  background-color: #181c27;
+  padding-bottom: 38px;
+}
+
+.banner__title {
+  font-size: 30px;
+  line-height: 39px;
+  color: #ffffff;
+  font-family: 'Acrom';
+  font-weight: bold;
+  text-transform: uppercase;
+  width: 245px;
+  margin: 0 auto 42px;
+  padding-top: 64px;
+}
+
+p {
+  font-size: 14px;
+  letter-spacing: 0px;
+  line-height: 20px;
+  color: #ffffff;
+  font-family: 'Acrom';
+  font-weight: bold;
+  text-align: center;
+  margin: 0 auto 30px;
+}
+
+.banner__logo {
+  text-transform: uppercase;
+  font-size: 120px;
+  line-height: 70px;
+  color: #000000;
+  font-family: 'Acrom';
+  font-weight: 800;
+  text-align: center;
+  margin: 0 auto 44px;
+}
+
+.banner__button {
+  width: 218px;
+  height: 54px;
+  box-shadow: 0px 5px 6px rgba(196, 87, 15, 0.26);
+  background-color: #ff6b08;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 18px;
+  font-family: 'Acrom';
+  font-weight: bold;
+  color: #ffffff;
+  line-height: 54px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 665px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 732px;
+  }
+}
