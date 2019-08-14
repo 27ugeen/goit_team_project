@@ -1,0 +1,22 @@
+.container {
+    min-width: 480px;
+}
+.start-earning__heading{
+    padding-top: 56px;
+}
+.start-earning__heading__foreword{
+  font-size: 13.5px;
+  font-family: $main-font;
+  color: $main-txt-color;
+  line-height: 1.444;
+  font-weight: medium;
+  margin-bottom: 28px;
+}
+
+.start-earning__heading__desc{
+    text-align: center;
+    margin-top: 46px;
+    font-family: $main-font;
+    text-transform: uppercase;
+    font-weight: bold;
+}
