@@ -1,42 +1,42 @@
-@font-face{
-    font-family: "AcromExtraBold";
-    src: url(./Acrom/Acrom-ExtraBold.woff);
-    font-weight: normal;
-    font-style: normal;
+@font-face {
+  font-family: 'AcromExtraBold';
+  src: url(./Acrom/Acrom-ExtraBold.woff);
+  font-weight: normal;
+  font-style: normal;
 }
-@font-face{
-    font-family: "AcromBold";
-    src: url(./Acrom/Acrom-Bold.woff);
-    font-weight: normal;
-    font-style: normal;
+@font-face {
+  font-family: 'AcromBold';
+  src: url(./Acrom/Acrom-Bold.woff);
+  font-weight: normal;
+  font-style: normal;
 }
-@font-face{
-    font-family: "AcromRegular";
-    src: url(./Acrom/Acrom-Regular.woff);
-    font-weight: normal;
-    font-style: normal;
+@font-face {
+  font-family: 'AcromRegular';
+  src: url(./Acrom/Acrom-Regular.woff);
+  font-weight: normal;
+  font-style: normal;
 }
-@font-face{
-    font-family: "AcromMedium";
-    src: url(./Acrom/Acrom-Medium.woff);
-    font-weight: normal;
-    font-style: normal;
+@font-face {
+  font-family: 'AcromMedium';
+  src: url(./Acrom/Acrom-Medium.woff);
+  font-weight: normal;
+  font-style: normal;
 }
-@font-face{
-    font-family: "AcromLight";
-    src: url(./Acrom/Acrom-ExtraBold.woff);
-    font-weight: normal;
-    font-style: normal;
+@font-face {
+  font-family: 'AcromLight';
+  src: url(./Acrom/Acrom-Light.woff);
+  font-weight: normal;
+  font-style: normal;
 }
-@font-face{
-    font-family: "MinionPro";
-    src: url(./MinionPro/MinionPro-Regular.woff);
-    font-weight: normal;
-    font-style: normal;
+@font-face {
+  font-family: 'MinionPro';
+  src: url(./MinionPro/MinionPro-Regular.woff);
+  font-weight: normal;
+  font-style: normal;
 }
-@font-face{
-    font-family: "FuturaBold";
-    src: url(./Futura/Futura\ Bold.ttf);
-    font-weight: normal;
-    font-style: normal;
+@font-face {
+  font-family: 'FuturaBold';
+  src: url(./Futura/Futura-Bold.ttf);
+  font-weight: normal;
+  font-style: normal;
 }
