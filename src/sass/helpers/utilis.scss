@@ -1,5 +1,5 @@
 .section{
-  padding-top: 30px;
+  padding-top: 50px;
 }
 
 .section-container {
@@ -7,19 +7,13 @@
   margin: 0 auto;
 }
 
-.section-heading {
-  font-size: 18px;
-  line-height: 24px;
-  color: $main-txt-color;
-  font-family: $main-font;
-  text-transform: uppercase;
-  margin-bottom: 24px;
-}
+
 
 .section-heading__dark {
+  @extend %section-heading;
   display: inline-block;
   color: $main-white-color;
-  background: $first-bg-line-color;
+  background-color: $first-bg-line-color;
 }
 
 .section-sub {
@@ -32,3 +26,4 @@
   position: relative;
   margin-bottom: 50px;
 }
+
