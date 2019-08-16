@@ -1,9 +1,22 @@
 /*
    Import partials below
 */
+
+// HELPERS
+
 @import './normalize';
 
 @import './helpers/variables';
 @import './helpers/placeholders';
 @import './helpers/base';
 @import './helpers/mixins';
+
+// MEDIA-RULES
+
+@import './media-rules/media-480px.scss';
+@import './media-rules/media-768px.scss';
+@import './media-rules/media-1200px.scss';
+
+// COMPONENTS
+
+@import './components/section-2-3-4.scss';

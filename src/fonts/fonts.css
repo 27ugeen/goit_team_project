@@ -1,0 +1,42 @@
+@font-face {
+  font-family: 'Acrom';
+  src: url(./Acrom/Acrom-ExtraBold.woff) format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Acrom';
+  src: url(./Acrom/Acrom-Bold.woff) format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Acrom';
+  src: url(./Acrom/Acrom-Regular.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Acrom';
+  src: url(./Acrom/Acrom-Medium.woff) format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Acrom';
+  src: url(./Acrom/Acrom-ExtraBold.woff) format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MinionPro';
+  src: url(./MinionPro/MinionPro-Regular.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Futura';
+  src: url(./Futura/Futura\ Bold.ttf) format("ttf");
+  font-weight: bold;
+  font-style: normal;
+}
