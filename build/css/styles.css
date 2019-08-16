@@ -506,11 +506,10 @@ html {
 }
 
 .start-earning__heading__image {
-  margin-right: 0px;
+  margin: 0 auto;
   background-image: url(../../images/480px/compress/content-image-min.jpg);
   width: 446px;
   height: 132px;
-  position: relative;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -599,6 +598,7 @@ html {
   line-height: 1.444;
   text-align: left;
   width: 395px;
+  margin: 0 auto;
 }
 
 .start-earning__text__description__list__item:last-child {
@@ -620,6 +620,105 @@ html {
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 40px;
+}
+
+.dev-career {
+  margin-top: 48px;
+}
+
+.dev-career__img {
+  background-image: url(../../images/480px/original/tools.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 288px;
+  height: 236px;
+  margin: 0 auto;
+  margin-bottom: 24px;
+}
+
+.dev-career__text {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.dev-career__text__title {
+  text-transform: uppercase;
+  line-height: 1.333;
+  text-align: left;
+  width: 178px;
+  font-family: "Acrom", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  margin-bottom: 14px;
+}
+
+.dev-career__text__title::before {
+  content: "[";
+  width: 4px;
+  height: 18px;
+  margin-right: 9px;
+}
+
+.dev-career__text__title::after {
+  content: "]";
+  width: 4px;
+  height: 18px;
+  margin-left: 11px;
+}
+
+.dev-career__text__explain {
+  width: 264px;
+  line-height: 1.444;
+  text-align: left;
+  font-family: "Acrom", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 28px;
+}
+
+.dev-career__text__explain::before {
+  content: "";
+  width: 20px;
+  height: 3px;
+  margin: 0 auto;
+  background: #000000;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 18px;
+}
+
+.dev-career__terminology {
+  margin-top: 28px;
+  margin: 0 auto;
+  width: 294px;
+}
+
+.dev-career__terminology__heading::before {
+  content: "\25A0";
+  width: 7px;
+  height: 7px;
+  margin-right: 17px;
+}
+
+.dev-career__terminology__heading {
+  font-family: "Acrom", "Arial", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.571;
+  text-align: left;
+  margin-bottom: 24px;
+}
+
+.dev-career__terminology__text {
+  color: #3f4144;
+  line-height: 1.444;
+  text-align: left;
+  font-family: "Acrom", "Arial", sans-serif;
+  font-size: 14px;
+  width: 294px;
 }
 
 * {
@@ -800,17 +899,19 @@ html {
     width: 626px;
     padding-top: 114px;
     margin: 0 auto;
-    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
   }
 
   .start-earning__heading__image {
     background-image: url(../../images/768px/compress/content-image-min.jpg);
     height: 258px;
     width: 241px;
-    margin-right: 0 auto;
-    position: absolute;
-    top: 30%;
-    left: 0;
+    margin: 0 auto;
+    order: -1;
+    margin-right: 0;
+    margin-left: 0;
   }
 
   .start-earning__heading__foreword {
@@ -819,36 +920,65 @@ html {
     line-height: 1.495;
     text-align: left;
     font-weight: 500;
-    position: absolute;
-    right: 15%;
-    top: 30%;
-    margin-bottom: 38px;
   }
 
   .start-earning__heading__desc {
-    position: absolute;
     width: 228px;
-    right: 10%;
-    top: 60%;
+    margin-top: 38px;
   }
 
-  /*
-     .start-earning__heading__desc--first{
-         font-size: 10px;
-         width: 156px;
-     }
-     .start-earning__heading__desc--second{
-         font-size: 27px;
-         margin-left: 0;
-     }
-      .start-earning__heading__desc--second__secondpart{
-       width: 224px;
-         height: 32px;
-      }
-      .start-earning__text{
-          margin-top: 120px;
-        
-      }*/
+  .start-earning__heading__desc--first {
+    font-size: 10px;
+    width: 156px;
+  }
+
+  .start-earning__heading__desc--second {
+    font-size: 27px;
+    margin-left: 0;
+    height: 95px;
+    width: 228px;
+    margin-top: 18px;
+  }
+
+  .start-earning__heading__desc--second__secondpart {
+    width: 224px;
+    height: 32px;
+  }
+
+  .start-earning__text__description {
+    margin-top: 120px;
+    font-size: 17px;
+    line-height: 1.2;
+    text-align: left;
+    margin-bottom: 22px;
+  }
+
+  .start-earning__text__description__list {
+    list-style: none;
+    width: 630px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .start-earning__text__description__list__item {
+    margin-bottom: 20px;
+    width: 144px;
+    line-height: 1.308;
+    text-align: left;
+    color: black;
+    font-size: 9px;
+  }
+
+  .start-earning__text__description__blockquot {
+    font-size: 10px;
+    width: 176px;
+    text-align: left;
+    margin-right: 80px;
+    display: flex;
+    justify-content: end;
+  }
 
   .video-curse {
     margin-top: 75px;

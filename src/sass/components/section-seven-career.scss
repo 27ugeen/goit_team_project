@@ -1,0 +1,87 @@
+.dev-career{
+    margin-top: 48px;
+}
+.dev-career__img{
+    background-image: url(../../images/480px/original/tools.png);
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 288px;
+    height: 236px;
+    margin: 0 auto;
+    margin-bottom: 24px;
+}
+.dev-career__text{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.dev-career__text__title{
+    text-transform: uppercase;
+  line-height: 1.333;
+  text-align: left;
+  width: 178px;
+  font-family:$main-font ;
+  font-size: 18px;
+  font-weight: 800;
+  margin-bottom: 14px;
+}
+.dev-career__text__title::before{
+    content: "[";
+    width: 4px;
+    height: 18px;
+    margin-right: 9px;
+}
+.dev-career__text__title::after{
+    content: "]";
+    width: 4px;
+    height: 18px;
+    margin-left: 11px;
+}
+.dev-career__text__explain{
+    width: 264px;
+    line-height: 1.444;
+  text-align: left;
+  font-family:$main-font ;
+  font-size: $main-font-size;
+  font-weight: 500;
+  margin-bottom: 28px;
+}
+.dev-career__text__explain::before{
+    content: "";
+    width: 20px;
+  height: 3px;
+  margin: 0 auto;
+  background: $first-bg-line-color;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 18px;
+}
+.dev-career__terminology{
+    margin-top: 28px;
+    margin: 0 auto;
+    width: 294px;
+ }
+.dev-career__terminology__heading::before{
+    content: "\25A0";
+    width: 7px;
+    height: 7px;
+    margin-right: 17px;
+}
+.dev-career__terminology__heading{
+    font-family: $main-font;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.571;
+    text-align: left;
+    margin-bottom: 24px;
+}
+.dev-career__terminology__text{
+    color: rgb(63, 65, 68);
+  line-height: 1.444;
+  text-align: left;
+  font-family:$main-font;
+  font-size: $main-font-size;
+  width: 294px;
+}

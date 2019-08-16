@@ -14,11 +14,10 @@
     margin-bottom: 28px;
   }
  .start-earning__heading__image{
-    margin-right: 0px;
+     margin: 0 auto;
      background-image: url(../../images/480px/compress/content-image-min.jpg);
      width: 446px;
      height: 132px;
-     position: relative;
      background-position: center;
      background-repeat: no-repeat;
      background-size: cover;
@@ -103,6 +102,8 @@ font-family: $main-font;
     line-height: 1.444;
    text-align: left;
    width: 395px;
+   margin: 0 auto;
+   
 }
 .start-earning__text__description__list__item:last-child{
     margin-bottom: 48px;
@@ -130,19 +131,19 @@ font-family: $main-font;
         width: 626px;
         padding-top: 114px;
         margin: 0 auto;
-       position: relative;
-        
-
+      display: flex;
+     justify-content: center;
+     flex-direction: row;
     }
     .start-earning__heading__image{
         background-image: url(../../images/768px/compress/content-image-min.jpg);
         height: 258px;
         width: 241px;
-        margin-right: 0 auto;
-       position: absolute;
-       top: 30%;
-       left: 0;
-    
+        margin: 0 auto;
+        order: -1;
+        margin-right: 0;
+        margin-left: 0;
+      
         @media (-webkit-min-device-pixel-ratio: 2),
      (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
@@ -155,17 +156,12 @@ font-family: $main-font;
          line-height: 1.495;
          text-align: left;
          font-weight: 500;
-         position: absolute;
-         right: 15%;
-         top: 30%;
-         margin-bottom: 38px;
+        
      }
      .start-earning__heading__desc{
-         position: absolute;
          width: 228px;
-         right: 10%;
-         top: 60%;
-     }/*
+         margin-top: 38px;
+     }  
      .start-earning__heading__desc--first{
          font-size: 10px;
          width: 156px;
@@ -173,13 +169,43 @@ font-family: $main-font;
      .start-earning__heading__desc--second{
          font-size: 27px;
          margin-left: 0;
+         height: 95px;
+         width: 228px;
+         margin-top: 18px;
      }
       .start-earning__heading__desc--second__secondpart{
        width: 224px;
          height: 32px;
       }
-      .start-earning__text{
+      .start-earning__text__description{
           margin-top: 120px;
-        
-      }*/
+         font-size: 17px;
+       line-height: 1.2;
+       text-align: left;
+       margin-bottom: 22px;
+      }
+      .start-earning__text__description__list{
+          list-style: none;
+          width: 630px;
+          margin: 0 auto;
+          display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      }
+     .start-earning__text__description__list__item{
+      margin-bottom: 20px;
+      width: 144px;
+      line-height: 1.308;
+  text-align: left;
+  color: rgba(0, 0, 0, 255);
+  font-size: 9px;
+     }
+     .start-earning__text__description__blockquot{
+         font-size: 10px;
+        width: 176px;
+        text-align: left;
+        margin-right: 80px;
+        display: flex;
+        justify-content: end;
+     }
     }
