@@ -161,9 +161,15 @@
     margin-right: 80px;
   }
 
+  
   .section-heading {
     @include font-settings(27px, 34px);
     display: inline;
+    text-align: left;
+  }
+
+  
+  .section-heading_block{
     text-align: left;
   }
 
@@ -227,7 +233,9 @@
     @include font-settings(30px, 38px);
 
     &_block {
-      width: 260px;
+      width: 280px;
+      text-align: left;
+      padding-left: 0;
     }
   }
 

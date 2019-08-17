@@ -33,7 +33,7 @@
     </div>
   </div>
 
-  <form action="submit">
+  <form action="#" method="get">
     <div class="bonus-form">
       <label class="bonus-form__label" for="name">Имя</label>
       <input
@@ -43,6 +43,7 @@
         type="text"
         placeholder="Как вас зовут?"
         required
+        name="name"
       />
 
       <label class="bonus-form__label" for="tel">Телефон</label>
@@ -53,6 +54,7 @@
         type="tel"
         placeholder="Ваш номер телефона"
         required
+        name="tel"
       />
 
       <label class="bonus-form__label" for="email">E-mail</label>
@@ -63,10 +65,9 @@
         type="email"
         placeholder="Адрес электронного ящика"
         required
+        name="email"
       />
-      <div class="bonus-form__btn">
-        <input class="btn-form" type="button" value="Приобрести видео-курс" />
-      </div>
+      <input class="btn-form" type="submit" value="Приобрести видео-курс" />
     </div>
   </form>
 </section>
