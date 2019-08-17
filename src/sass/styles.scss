@@ -8,9 +8,18 @@
 @import './helpers/base';
 @import './helpers/mixins';
 
+// MEDIA-RULES
+
+@import './media-rules/media-480px';
+@import './media-rules/media-768px';
+@import './media-rules/media-1200px';
+
+// COMPONENTS
+
 @import './components/header';
 @import './components/banner';
 @import './components/section-one';
+@import './components/section-2-3-4';
 @import './components/section-five';
 @import './components/section-six';
 @import './components/section-eight';
