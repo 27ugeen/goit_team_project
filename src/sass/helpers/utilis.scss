@@ -1,4 +1,4 @@
-.section{
+.section {
   padding-top: 50px;
 }
 
@@ -7,13 +7,21 @@
   margin: 0 auto;
 }
 
-
+.section-heading {
+  font-size: 18px;
+  line-height: 24px;
+  color: $main-txt-color;
+  font-family: $main-font;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+ 
+}
 
 .section-heading__dark {
-  @extend %section-heading;
   display: inline-block;
   color: $main-white-color;
   background-color: $first-bg-line-color;
+  margin-bottom: 30px;
 }
 
 .section-sub {
@@ -27,3 +35,18 @@
   margin-bottom: 50px;
 }
 
+.btn-form{
+  display: block;
+  margin: 0 auto;
+  margin-top: 38px;
+  background-color: $accent-txt-color;
+  font-family: $main-font;
+  font-weight: 300;
+  font-size: 10.87px;
+  line-height: $main-line-height;
+  color: $main-white-color;
+  padding: 13px 26px;
+  border: 1px solid $accent-txt-color;
+  box-shadow: 0px 5px 6px 0px rgba(196, 87, 15, 0.26);
+  text-transform: uppercase;
+}
