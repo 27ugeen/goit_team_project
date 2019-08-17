@@ -1,21 +1,74 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 .video-curse {
   margin-top: 23px;
   padding-bottom: 55px;
-}
-.video-curse__description {
-  width: 292px;
-  padding-top: 27px;
-  margin: 0 auto;
+
+  &__title {
+    font-family: $main-font;
+    @include font-settings(28px, 33.65px);
+    color: $main-txt-color;
+    text-transform: uppercase;
+  }
+
+  &__subtitle {
+    font-family: $main-font;
+    @include font-settings(9px, 13.46px);
+    color: $main-txt-color;
+    position: relative;
+    margin-top: 17px;
+    padding-left: 45px;
+    width: 180px;
+  
+    &:before {
+      @include pseudo($display: block);
+      position: absolute;
+      width: 28px;
+      height: 3px;
+      background: #000;
+      left: 1px;
+      top: 6px;
+    }
+  }
+  &__description {
+    width: 292px;
+    padding-top: 27px;
+    margin: 0 auto;
+  }
+  &__block {
+    display: none;
+  }
+  &__footer {
+    width: 331px;
+    margin: 0 auto;
+  }
+  &__paragraph {
+    position: relative;
+    font-family: $main-font;
+    font-size: $main-font-size;
+    line-height: 24px;
+    color: $accent-txt-color;
+
+    &:before {
+      @include pseudo($display: block);
+      position: absolute;
+      width: 2px;
+      height: 22px;
+      background: $main-txt-color;
+      top: 2px;
+      left: -15px;
+      transform: rotate(25deg);
+    }
+  }
 }
 .video-curse__description__title {
-  font-family: $main-font;
-  font-weight: 800;
+  font-family: $main-font;;
   @include font-settings(12px, 17px);
   color: $main-txt-color;
+  text-transform: uppercase;
 }
 .video-curse__description__list {
   padding-top: 36px;
@@ -26,22 +79,19 @@
   counter-reset: none;
   counter-increment: b;
   margin: 0 0 30px 20px;
-  
+
   &:before {
     position: absolute;
-    display: block;
+    @include pseudo($display: block, $content: '[ 00' counter(b) ' ]');
     width: 48px;
     height: 9px;
-    content: '[ 00' counter(b) ' ]';
     background-color: $accent-txt-color;
     font-family: $main-font;
     @include font-settings(13px, 100%);
-    font-weight: bold;
     color: #fff;
     text-align: center;
     top: 25px;
     left: -40px;
-    -webkit-transform: rotate(-90deg);
     transform: rotate(-90deg);
   }
   &:last-child {
@@ -50,42 +100,16 @@
 }
 .description__item__title {
   font-family: $main-font;
-  font-weight: 800;
   font-size: $main-font-size;
-  line-height: $main-line-height;
+  line-height: 18px;
   padding-bottom: 10px;
   color: $main-txt-color;
 }
-.description___item__paragraph {
-  font-family: $main-font;
-  font-weight: 600;
+.description__item__paragraph {
+  font-family: 'AcromMedium';
   font-size: $main-font-size;
-  line-height: $main-line-height;
+  line-height: 15px;
   color: $secondary-txt-color;
-}
-.video-curse__footer {
-  width: 331px;
-  margin: 0 auto;
-}
-.video-curse__paragraph {
-  position: relative;
-  font-family: $main-font;
-  font-weight: 600;
-  font-size: $main-font-size;
-  line-height: 24px;
-  color: $accent-txt-color;
-
-  &:before {
-    display: block;
-    position: absolute;
-    content: '';
-    width: 2px;
-    height: 22px;
-    background: $main-txt-color;
-    top: 2px;
-    left: -15px;
-    transform: rotate(25deg);
-  }
 }
 .video-curse__btn {
   display: block;
@@ -114,101 +138,70 @@
     border: 1px solid #06a4b2;
   }
 }
-.video-curse__block {
-  display: none;
-}
-.video-curse__title {
-  font-family: $main-font;
-  font-weight: 800;
-  @include font-settings(28px, 33.65px);
-  color: $main-txt-color;
-  text-transform: uppercase;
-}
-.video-curse__subtitle {
-  font-family: $main-font;
-  font-weight: 600;
-  @include font-settings(9px, 13.46px);
-  color: $main-txt-color;
-  position: relative;
-  margin-top: 25px;
-  padding-left: 45px;
-  width: 180px;
-
-  &:before {
-    display: block;
-    position: absolute;
-    content: '';
-    width: 28px;
-    height: 3px;
-    background: #000;
-    left: 1px;
-    top: 0.3125rem;
-  }
-}
 @media screen and (min-width: 768px) {
   .video-curse {
     margin-top: 75px;
-  }
-  .video-curse__block {
-    display: block;
-    flex-basis: 70%;
-    padding-top: 23px;
-    margin-left: 55px;
-  }
-  .video-curse__header {
-    @include center-flex($type: 'ver_between');
+
+    &__block {
+      display: block;
+      padding-top: 23px;
+    }
+    &__header {
+      display: grid;
+      grid-template-columns: 50% 50%;
+    }
   }
   .video-curse__header__img {
     width: 275px;
     height: 169px;
   }
-  .video-curse_description {
-    display: flex;
-    flex-direction: row;
+  .video-curse__description {
     width: 100%;
+    display: grid;
+    grid-template-columns: 15% 85%;
+    margin: 0;
     padding-top: 53px;
+
+    &__list {
+      display: grid;
+      grid-template-columns: 31% 31% 31%;
+      grid-column-gap: 20px;
+      grid-row-gap: 25px;
+      padding: 0;
+      margin: 0;
+      padding-left: 30px;
+    }
   }
-  .description_title {
-    flex-basis: 20%;
-    text-transform: uppercase;
+  .video-curse__description__title {
     font-size: 8.97px;
     line-height: 17px;
   }
-  .description_list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    flex-basis: 80%;
-    padding: 0;
-    padding-left: 30px;
-  }
-  .description_item {
+  .description__item {
     margin: 0;
-    flex-basis: 30%;
+
+    &:before {
+      width: 21px;
+      height: 8px;
+      font-size: 5.61px;
+      top: 10px;
+      left: -25px;
+    }
+    &:nth-child(n + 3) {
+      margin-bottom: 27px;
+    }
+    &_title {
+      @include font-settings(11px, 12px);
+    }
+    &__paragraph {
+      @include font-settings(10px, 15px);
+    }
   }
-  .description_item_title {
-    @include font-settings(11px, 12px);
-  }
-  .description_item_paragraph {
-    font-family: $main-font;
-    @include font-settings(10px, 12px);
-  }
-  .description_item:before {
-    width: 21px;
-    height: 8px;
-    font-size: 5.61px;
-    top: 10px;
-    left: -25px;
-  }
-  .description_item:nth-child(n + 3) {
-    margin-bottom: 27px;
-  }
-  .video-curse_footer {
-    display: flex;
-    flex-direction: row;
+  .video-curse__footer {
+    display: grid;
+    grid-template-columns: 15% 85%;
     width: 100%;
   }
-  .video-curse_btn {
+  .video-curse__btn {
     order: 1;
     font-size: 6.17px;
     line-height: 10px;
@@ -216,7 +209,7 @@
     padding: 2px 10px;
     margin: 0;
   }
-  .video-curse_paragraph {
+  .video-curse__paragraph {
     order: 2;
     width: 180px;
     @include font-settings(9px, 13px);
@@ -226,14 +219,5 @@
 @media screen and (min-width: 1200px) {
   .video-curse__title {
     @include font-settings(34px, 37.5px);
-  }
-  .video-curse__header img {
-    width: 307px;
-    height: 190px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .video-curse__header__img {
-    width: 100%;
   }
 }
