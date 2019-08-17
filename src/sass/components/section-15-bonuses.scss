@@ -11,6 +11,7 @@
   width: 310px;
   margin: 0 auto;
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .sub-title__block {
@@ -38,6 +39,8 @@
   list-style-position: inside;
   counter-reset: custom-counter;
 }
+
+// Customizing li elements 
 
 .bonus-item {
   counter-increment: custom-counter;
@@ -81,22 +84,27 @@
     left: -20%;
     top: -3%;
   }
-  // &__description::before {
-  //   display: block;
-  //   content: '';
-  //   position: absolute;
-  //   width: 10px;
-  //   height: 10px;
-  //   color: red;
-  //   top: 10%;
-  //   left: -10%;
-  // }
+
+  &__description::before {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    color: red;
+    top: 10%;
+    left: -10%;
+    z-index: 2;
+
+  }
 }
 
 .bg-dark {
   background-color: $first-bg-line-color;
   color: $main-white-color;
 }
+
+// Form Styling and positioning
 
 .bonus-form {
   display: flex;
@@ -134,9 +142,7 @@
     justify-content: flex-end;
   }
 
-  .btn-form {
-    @extend %btn-form;
-  }
+ 
 }
 
 @media (min-width: 768px) {
@@ -155,9 +161,15 @@
     margin-right: 80px;
   }
 
+  
   .section-heading {
     @include font-settings(27px, 34px);
     display: inline;
+    text-align: left;
+  }
+
+  
+  .section-heading_block{
     text-align: left;
   }
 
@@ -192,8 +204,6 @@
   }
 
   .bonus-item {
-    // margin:0;
-
     &__title {
       @include font-settings(9px, 15px);
 
@@ -217,14 +227,15 @@
 
   .section-title {
     width: 260px;
-  
   }
 
   .section-heading {
     @include font-settings(30px, 38px);
 
     &_block {
-      width: 260px;
+      width: 280px;
+      text-align: left;
+      padding-left: 0;
     }
   }
 
@@ -232,15 +243,15 @@
     @include font-settings(10px, 15px);
   }
 
-  .bonus-item__title{
+  .bonus-item__title {
     @include font-settings(10px, 16px);
   }
 
-  .bonus-item__description{
+  .bonus-item__description {
     @include font-settings(9px, 13px);
   }
 
-  .bonus-item__title::before{
+  .bonus-item__title::before {
     @include font-settings(19px, 23px);
   }
 }
