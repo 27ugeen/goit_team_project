@@ -2,11 +2,12 @@
    Import partials below
 */
 @import './normalize';
-
+@import './fonts';
 @import './helpers/variables';
 @import './helpers/placeholders';
 @import './helpers/base';
 @import './helpers/mixins';
+@import './helpers/utilis';
 
 // MEDIA-RULES
 
@@ -23,3 +24,5 @@
 @import './components/section-five';
 @import './components/section-six';
 @import './components/section-eight';
+
+@import './components/section-15-bonuses';
