@@ -1,31 +1,21 @@
 .header {
-  position: absolute;
-  left: 18px;
-  top: 14px;
-}
+  position: relative;
 
-.container {
-  width: 445px;
-  margin: 0 auto;
-}
-
-.social {
-  display: none;
-}
-
-.social__svg {
-  width: 11px;
-  height: 11px;
-}
-
-@media screen and (min-width: 768px) {
-  .container {
-    width: 665px;
+  h1 {
+    margin: 0;
   }
-}
 
-@media screen and (min-width: 1200px) {
-  .container {
-    width: 732px;
+  .wrapper {
+    position: absolute;
+    top: 18px;
+    left: 15px;
+    right: 10px;
+    @include center-flex($type: 'ver_between');
+
+    .header__svg {
+      width: 27px;
+      height: 17px;
+      fill: $main-white-color;
+    }
   }
 }

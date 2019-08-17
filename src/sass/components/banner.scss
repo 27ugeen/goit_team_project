@@ -1,4 +1,5 @@
 .banner {
+  background-image: radial-gradient(at center, #2d3447, #181c27);
   background-color: #181c27;
   padding-bottom: 38px;
 
@@ -12,6 +13,19 @@
     width: 245px;
     margin: 0 auto 42px;
     padding-top: 64px;
+  }
+
+  p {
+    width: 370px;
+    font-size: 13px;
+    letter-spacing: 0px;
+    line-height: $main-line-height;
+    color: $main-white-color;
+    font-family: $main-font;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 auto 30px;
   }
 
   a {
@@ -29,39 +43,78 @@
     line-height: 54px;
     margin: 0 auto;
   }
-}
 
-.banner__post-up,
-.banner__post-bot {
-  width: 370px;
-  font-size: $main-font-size;
-  letter-spacing: 0px;
-  line-height: $main-line-height;
-  color: $main-white-color;
-  font-family: $main-font;
-  font-weight: bold;
-  text-align: center;
-  text-transform: uppercase;
-  margin: 0 auto 30px;
-}
+  .banner__logo {
+    text-transform: uppercase;
+    font-size: 120px;
+    line-height: 70px;
+    color: rgba(0, 0, 0, 0.2);
+    font-family: $main-font;
+    font-weight: 800;
+    text-align: center;
+    margin: 0 auto 44px;
+  }
 
-.banner__post-bot {
-  text-align: left;
+  .banner__post-bot {
+    text-align: left;
 
-  span {
-    color: #afb0b3;
-    font-weight: 300;
-    text-transform: none;
+    span {
+      color: #afb0b3;
+      font-weight: 300;
+      text-transform: none;
+    }
   }
 }
 
-.banner__logo {
-  text-transform: uppercase;
-  font-size: 120px;
-  line-height: 70px;
-  color: $main-txt-color;
-  font-family: $main-font;
-  font-weight: 800;
-  text-align: center;
-  margin: 0 auto 44px;
+.banner__slider {
+  position: relative;
+  width: 420px;
+  margin: 0 auto;
+
+  button {
+    position: absolute;
+    @extend %btn;
+  }
+
+  .slide-prew {
+    top: 0;
+    left: 0;
+    width: 9px;
+    height: 9px;
+    background-image: url(../images/480px/icons/prew.png);
+  }
+
+  .slide-next {
+    bottom: 0;
+    right: 0;
+    width: 18px;
+    height: 16px;
+    background-image: url(../images/480px/icons/next.png);
+  }
+}
+
+.social {
+  display: none;
+}
+
+.social__svg {
+  width: 11px;
+  height: 11px;
+}
+
+.container {
+  width: 445px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 665px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 732px;
+  }
 }
