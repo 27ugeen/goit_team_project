@@ -110,17 +110,17 @@
   background-color: #06a4b2;
   border: 1px solid #06a4b2;
 }
-.video-curse_title_block {
+.video-curse__block {
   display: none;
 }
-.title_block_title {
+.video-curse__title {
   font-family: $main-font;
   font-weight: 800;
   @include font-settings(28px, 33.65px);
   color: $main-txt-color;
   text-transform: uppercase;
 }
-.title_block_subtitle {
+.video-curse__subtitle {
   font-family: $main-font;
   font-weight: 600;
   @include font-settings(9px, 13.46px);
@@ -129,31 +129,31 @@
   margin-top: 25px;
   padding-left: 45px;
   width: 180px;
-}
-.title_block_subtitle:before {
-  display: block;
-  position: absolute;
-  content: '';
-  width: 28px;
-  height: 3px;
-  background: #000;
-  left: 1px;
-  top: 0.3125rem;
-}
+
+  &:before {
+    display: block;
+    position: absolute;
+    content: '';
+    width: 28px;
+    height: 3px;
+    background: #000;
+    left: 1px;
+    top: 0.3125rem;
+  }
 @media screen and (min-width: 768px) {
   .video-curse {
     margin-top: 75px;
   }
-  .video-curse_title_block {
+  .video-curse__block {
     display: block;
     flex-basis: 70%;
     padding-top: 23px;
     margin-left: 55px;
   }
-  .video-curse_header {
+  .video-curse__header {
     @include center-flex($type: 'ver_between');
   }
-  .video-curse_img {
+  .video-curse__header__img {
     width: 275px;
     height: 169px;
   }
@@ -219,16 +219,16 @@
   }
 }
 @media screen and (min-width: 1200px) {
-  .title_block_title {
+  .video-curse__title {
     @include font-settings(34px, 37.5px);
   }
-  .video-curse_header img {
+  .video-curse__header img {
     width: 307px;
     height: 190px;
   }
 }
 @media screen and (max-width: 768px) {
-  .video-curse_img {
+  .video-curse__header__img {
     width: 100%;
   }
 }
