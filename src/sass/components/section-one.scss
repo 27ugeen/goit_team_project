@@ -15,7 +15,7 @@
 }
 .start-earning__heading__image {
   margin-right: 0px;
-  background-image: url(../../images/480px/compress/content-image-min.jpg);
+  background-image: url(../images/480px/compress/content-image-min.jpg);
   width: 446px;
   height: 132px;
   position: relative;
@@ -25,7 +25,7 @@
   @media (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url(../../images/480px/compress/content-image@2x-min.jpg);
+    background-image: url(../images/480px/compress/content-image@2x-min.jpg);
   }
 }
 .start-earning__heading__desc {
@@ -134,7 +134,6 @@
   }
   .start-earning__heading__image {
     background-image: url(../../images/768px/compress/content-image-min.jpg);
-    height: 258px;
     width: 241px;
     margin-right: 0 auto;
     position: absolute;
