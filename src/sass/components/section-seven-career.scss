@@ -1,0 +1,160 @@
+.hedline{
+    padding-top: 48px;
+}
+.headline__img{
+    margin: 0 auto;
+    margin-bottom: 24px;
+    text-align: center;
+}
+.dev-career__text{
+    width: 308px;
+    margin: 0 auto;
+}
+.dev-career__titile{
+    text-transform: uppercase;
+    line-height: 1.333;
+    text-align: left;
+    width: 178px;
+    font-family:$main-font ;
+    font-size: 18px;
+    font-weight: 800;
+
+&::before{
+    content: "[";
+    width: 4px;
+    height: 18px;
+    margin-right: 9px;
+}
+}
+.dev-career__titile::after{
+    content: "]";
+    width: 4px;
+    height: 18px;
+    margin-left: 11px;
+}
+.dev-career__explain{
+    padding-left: 34px;
+    line-height: 1.444;
+  text-align: left;
+  font-family:$main-font ;
+  font-size: $main-font-size;
+  font-weight: 500;
+  margin-bottom: 28px;
+  margin-right: 0;
+
+&::before{
+    content: "";
+    width: 20px;
+  height: 3px;
+  margin: 0 auto;
+  margin-bottom: -12%;
+  margin-left: -10%;
+  background: $first-bg-line-color;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 18px;
+}
+}
+.dev-career__img{
+    text-align: center;
+    margin-bottom: 26px;
+    width: 446px;
+}
+.terminology{
+    margin: 0 auto;
+    width: 294px;
+    margin-bottom: 50px;
+}
+.terminology__heading{
+ text-transform: uppercase;
+  line-height: 1.571;
+  text-align: left;
+  font-size: 15px ;
+  font-weight: 800;
+  font-family: $main-font;
+
+&::before{
+    content: "\25A0";
+    color: $main-txt-color;
+    height: 7px;
+    width: 7px;
+    margin-right: 16px;
+}
+}
+.terminology__text{
+color: $secondary-txt-color;
+line-height: 1.444;
+text-align: left;
+font-family:$main-font ;
+font-weight: 400;
+font-size: $main-font-size;
+}
+    
+@media screen and (min-width: 768px) {
+    .container {
+      min-width: 748px;
+    }
+    .hedline{
+        padding-top: 88px;
+        display: grid;
+        grid-template-columns:275px 312px ;
+        grid-template-rows: 216px 182px;
+        justify-content: space-evenly;
+    }
+    .headline__img{
+        width: 274px;
+    }
+    .dev-career__titile{
+        font-size: 27px;
+        width: 276px;
+    }
+    .dev-career__explain{
+        font-size: $micro-line-height;
+        width: 256px;
+    }
+    .dev-career__img{
+  grid-row-start:    2;
+  grid-row-end:      2;
+  grid-column-start: 2;
+  grid-column-end:   2;
+  width: 312px;
+  margin-bottom: 0;
+    }
+    .terminology__heading{
+        font-size: $micro-line-height;
+        margin-bottom: 20px;
+    }
+    .terminology__text{
+        font-size: 8px;
+        width: 200px;
+    }
+}
+
+    
+@media screen and (min-width: 1200px) {
+    .container {
+      min-width: 1200px;
+    }
+    .hedline{
+        padding-top: 42px;
+    }
+    .headline__img{
+        width: 302px;
+    }
+    .dev-career__titile{
+        font-size: 30px;
+    }
+    .dev-career__explain{
+        font-size: 10px;
+    }
+    .terminology__heading{
+        font-size: 10px;
+        margin-bottom: 18px;
+    }
+    .dev-career__img{
+        width: 348px;
+    }
+    .terminology__text{
+        font-size: 9px;
+    }
+}
