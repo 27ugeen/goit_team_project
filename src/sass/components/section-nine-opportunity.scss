@@ -2,7 +2,7 @@
   width: 100%;
 }
 .opportunity__title,
-.opportunity__container__subtitle {
+.opportunity__subtitle {
   font-family: 'AcromExtraBold';
   text-transform: uppercase;
 }
@@ -12,7 +12,7 @@
 .opportunity__container {
   padding: 0 51px;
 }
-.opportunity__container__subtitle {
+.opportunity__subtitle {
   margin-top: 23px;
   margin-bottom: 18px;
   @include font-settings(15px, 20px);
@@ -23,7 +23,7 @@
     margin-bottom: 42px;
   }
 }
-.opportunity__container__content {
+.opportunity__content {
   position: relative;
   padding-left: 36px;
   font-family: 'AcromMedium';
@@ -48,7 +48,7 @@
   font-family: 'AcromMedium';
   @include font-settings(12px, 16px);
 }
-.opportunity__container__tenders {
+.opportunity__tenders {
   position: relative;
 
   &__img {
@@ -115,14 +115,14 @@
   content: '03_';
 }
 .opportunity__title,
-.opportunity__container__subtitle,
-.opportunity__container__content,
+.opportunity__subtitle,
+.opportunity__content,
 .tenders__title1,
 .tenders__title2,
 .paragraph__bold {
   color: $main-txt-color;
 }
-.opportunity_subtitle_content,
+.opportunity_content,
 .tenders__paragraph {
   color: $secondary-txt-color;
 }
