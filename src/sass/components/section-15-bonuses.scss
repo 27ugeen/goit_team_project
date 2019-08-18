@@ -1,0 +1,257 @@
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.section-bonus {
+  padding-top: 30px;
+}
+
+.section-title {
+  width: 310px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sub-title__block {
+  position: relative;
+
+  &::before {
+    content: '';
+    width: 20px;
+    height: 3px;
+    background-color: $first-bg-line-color;
+    position: absolute;
+    top: 20%;
+    left: -3%;
+  }
+}
+
+.bonus-description {
+  width: 300px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.bonus-list {
+  @extend %list;
+  list-style-position: inside;
+  counter-reset: custom-counter;
+}
+
+// Customizing li elements 
+
+.bonus-item {
+  counter-increment: custom-counter;
+  position: relative;
+  margin: 0 0 30px 20px;
+
+  &__title {
+    display: inline-block;
+    font-family: $main-font;
+    font-weight: 700;
+    color: $main-txt-color;
+    font-size: 16px;
+    text-align: left;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  &__description {
+    font-size: $main-font-size;
+    line-height: 20px;
+    color: $main-txt-color;
+    font-family: $main-font;
+    font-weight: 500;
+    position: relative;
+    margin-bottom: 50px;
+    text-align: left;
+  }
+
+  &__title::before {
+    display: block;
+    width: 30px;
+    height: 30px;
+    content: '0' counter(custom-counter) '.';
+    font-family: $main-font;
+    font-weight: 800;
+    font-size: 25px;
+    color: rgba(0, 0, 0, 255);
+    text-align: left;
+    margin-right: 20px;
+    position: absolute;
+    left: -20%;
+    top: -3%;
+  }
+
+  &__description::before {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    color: red;
+    top: 10%;
+    left: -10%;
+    z-index: 2;
+
+  }
+}
+
+.bg-dark {
+  background-color: $first-bg-line-color;
+  color: $main-white-color;
+}
+
+// Form Styling and positioning
+
+.bonus-form {
+  display: flex;
+  flex-direction: column;
+  width: 370px;
+  margin: 0 auto;
+  border: 1px solid lightgray;
+  box-shadow: 0px 0px 12px -2px rgba(176, 176, 176, 1);
+  padding: 50px;
+  margin-bottom: 20px;
+
+  &__label {
+    font-family: $main-font;
+    color: $secondary-txt-color;
+    font-style: bold;
+    font-size: 10px;
+    margin-bottom: 5px;
+  }
+
+  &__input {
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 3px;
+  }
+
+  &__input::placeholder {
+    font-family: $main-font;
+    font-size: $main-font-size;
+    color: $main-txt-color;
+  }
+
+  &__btn {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+ 
+}
+
+@media (min-width: 768px) {
+  .container {
+    min-width: 640px;
+    padding: 0;
+  }
+
+  .section-bonus {
+    display: flex;
+    margin-top: 75px;
+  }
+
+  .section-title {
+    width: 232px;
+    margin-right: 80px;
+  }
+
+  
+  .section-heading {
+    @include font-settings(27px, 34px);
+    display: inline;
+    text-align: left;
+  }
+
+  
+  .section-heading_block{
+    text-align: left;
+  }
+
+  .section-sub {
+    @include font-settings(9px, 13px);
+  }
+
+  .bonus-description {
+    width: 200px;
+  }
+
+  .sub-title__block {
+    width: 200px;
+    padding-left: 50px;
+    text-align: left;
+
+    &::before {
+      margin-right: 30px;
+      width: 28px;
+      height: 3px;
+    }
+  }
+
+  .section-sub__bonuses {
+    text-align: left;
+  }
+
+  .section-heading_block {
+    width: 236px;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+
+  .bonus-item {
+    &__title {
+      @include font-settings(9px, 15px);
+
+      &::before {
+        @include font-settings(17px, 20px);
+        top: 5%;
+        margin-right: 20px;
+      }
+    }
+
+    &__description {
+      @include font-settings(8px, 12px);
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    min-width: 713px;
+  }
+
+  .section-title {
+    width: 260px;
+  }
+
+  .section-heading {
+    @include font-settings(30px, 38px);
+
+    &_block {
+      width: 280px;
+      text-align: left;
+      padding-left: 0;
+    }
+  }
+
+  .section-sub {
+    @include font-settings(10px, 15px);
+  }
+
+  .bonus-item__title {
+    @include font-settings(10px, 16px);
+  }
+
+  .bonus-item__description {
+    @include font-settings(9px, 13px);
+  }
+
+  .bonus-item__title::before {
+    @include font-settings(19px, 23px);
+  }
+}

@@ -1,0 +1,42 @@
+.sect-warning__title {
+  width: 215px;
+  margin: 0 auto 20px;
+  font-size: 18px;
+  line-height: 24px;
+  color: $main-txt-color;
+  font-family: $main-font;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.sect-warning__post {
+  width: 215px;
+  margin: 0 auto 40px;
+  font-size: $main-font-size;
+  line-height: $main-line-height;
+  color: $main-txt-color;
+  font-family: $main-font;
+  font-weight: 500;
+}
+
+.sect-warning__list-item {
+  width: 305px;
+  text-align: left;
+  margin: 0 auto 20px;
+  font-size: $main-font-size;
+  line-height: $main-line-height;
+  font-family: $main-font;
+
+  h3 {
+    font-size: $main-font-size;
+    color: $main-txt-color;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 0 auto 10px;
+  }
+
+  p {
+    color: $secondary-txt-color;
+    margin: 0;
+  }
+}

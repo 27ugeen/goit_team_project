@@ -1,0 +1,29 @@
+/*
+   Import partials below
+*/
+@import './normalize';
+@import './fonts';
+@import './helpers/variables';
+@import './helpers/placeholders';
+@import './helpers/base';
+@import './helpers/mixins';
+@import './helpers/utilis';
+
+// MEDIA-RULES
+
+@import './media-rules/media-480px';
+@import './media-rules/media-768px';
+@import './media-rules/media-1200px';
+
+// COMPONENTS
+
+@import './components/header';
+@import './components/banner';
+@import './components/section-one';
+@import './components/section-2-3-4';
+@import './components/section-five';
+@import './components/section-six';
+@import './components/section-eight';
+
+@import './components/section-15-bonuses';
+@import './components/section-16-important';

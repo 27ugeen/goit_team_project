@@ -1,0 +1,234 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.video-curse {
+  margin-top: 23px;
+  padding-bottom: 55px;
+}
+.video-curse_description {
+  width: 292px;
+  padding-top: 27px;
+  margin: 0 auto;
+}
+.description_title {
+  font-family: $main-font;
+  font-weight: 800;
+  @include font-settings(12px, 17px);
+  color: $main-txt-color;
+}
+.description_list {
+  padding-top: 36px;
+}
+.description_item {
+  list-style: none;
+  position: relative;
+  counter-reset: none;
+  counter-increment: b;
+  margin: 0 0 30px 20px;
+}
+.description_item:before {
+  position: absolute;
+  display: block;
+  width: 48px;
+  height: 9px;
+  content: '[ 00' counter(b) ' ]';
+  background-color: $accent-txt-color;
+  font-family: $main-font;
+  @include font-settings(13px, 100%);
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  top: 25px;
+  left: -40px;
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+.description_item:last-child {
+  margin-bottom: 54px;
+}
+.description_item_title {
+  font-family: $main-font;
+  font-weight: 800;
+  font-size: $main-font-size;
+  line-height: $main-line-height;
+  padding-bottom: 10px;
+  color: $main-txt-color;
+}
+.description_item_paragraph {
+  font-family: $main-font;
+  font-weight: 600;
+  font-size: $main-font-size;
+  line-height: $main-line-height;
+  color: $secondary-txt-color;
+}
+.video-curse_footer {
+  width: 331px;
+  margin: 0 auto;
+}
+.video-curse_paragraph {
+  position: relative;
+  font-family: $main-font;
+  font-weight: 600;
+  font-size: $main-font-size;
+  line-height: 24px;
+  color: $accent-txt-color;
+}
+.video-curse_paragraph:before {
+  display: block;
+  position: absolute;
+  content: '';
+  width: 2px;
+  height: 22px;
+  background: $main-txt-color;
+  top: 2px;
+  left: -15px;
+  transform: rotate(25deg);
+}
+.video-curse_btn {
+  display: block;
+  margin: 0 auto;
+  margin-top: 38px;
+  background-color: $accent-txt-color;
+  font-family: $main-font;
+  font-weight: 300;
+  font-size: 10.87px;
+  line-height: $main-line-height;
+  color: $main-white-color;
+  padding: 13px 26px;
+  border: 1px solid $accent-txt-color;
+  box-shadow: 0px 5px 6px 0px rgba(196, 87, 15, 0.26);
+  margin-bottom: 80px;
+  text-transform: uppercase;
+}
+.video-curse_btn:hover {
+  background-color: #17ecff;
+  border: 1px solid #17ecff;
+  box-shadow: 0px 5px 6px 0px rgba(23, 236, 255, 0.26);
+}
+.video-curse_btn:active {
+  background-color: #06a4b2;
+  border: 1px solid #06a4b2;
+}
+.video-curse_title_block {
+  display: none;
+}
+.title_block_title {
+  font-family: $main-font;
+  font-weight: 800;
+  @include font-settings(28px, 33.65px);
+  color: $main-txt-color;
+  text-transform: uppercase;
+}
+.title_block_subtitle {
+  font-family: $main-font;
+  font-weight: 600;
+  @include font-settings(9px, 13.46px);
+  color: $main-txt-color;
+  position: relative;
+  margin-top: 25px;
+  padding-left: 45px;
+  width: 180px;
+}
+.title_block_subtitle:before {
+  display: block;
+  position: absolute;
+  content: '';
+  width: 28px;
+  height: 3px;
+  background: #000;
+  left: 1px;
+  top: 0.3125rem;
+}
+@media screen and (min-width: 768px) {
+  .video-curse {
+    margin-top: 75px;
+  }
+  .video-curse_title_block {
+    display: block;
+    flex-basis: 70%;
+    padding-top: 23px;
+    margin-left: 55px;
+  }
+  .video-curse_header {
+    @include center-flex($type: 'ver_between');
+  }
+  .video-curse_img {
+    width: 275px;
+    height: 169px;
+  }
+  .video-curse_description {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-top: 53px;
+  }
+  .description_title {
+    flex-basis: 20%;
+    text-transform: uppercase;
+    font-size: 8.97px;
+    line-height: 17px;
+  }
+  .description_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-basis: 80%;
+    padding: 0;
+    padding-left: 30px;
+  }
+  .description_item {
+    margin: 0;
+    flex-basis: 30%;
+  }
+  .description_item_title {
+    @include font-settings(11px, 12px);
+  }
+  .description_item_paragraph {
+    font-family: $main-font;
+    @include font-settings(10px, 12px);
+  }
+  .description_item:before {
+    width: 21px;
+    height: 8px;
+    font-size: 5.61px;
+    top: 10px;
+    left: -25px;
+  }
+  .description_item:nth-child(n + 3) {
+    margin-bottom: 27px;
+  }
+  .video-curse_footer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  .video-curse_btn {
+    order: 1;
+    font-size: 6.17px;
+    line-height: 10px;
+    color: #ffffff;
+    padding: 2px 10px;
+    margin: 0;
+  }
+  .video-curse_paragraph {
+    order: 2;
+    width: 180px;
+    @include font-settings(9px, 13px);
+    margin-left: 65px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .title_block_title {
+    @include font-settings(34px, 37.5px);
+  }
+  .video-curse_header img {
+    width: 307px;
+    height: 190px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .video-curse_img {
+    width: 100%;
+  }
+}
