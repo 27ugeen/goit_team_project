@@ -1,4 +1,10 @@
 // Price block customization
+<<<<<<< HEAD
+.section-imp{
+  margin-bottom: 50px;
+}
+=======
+>>>>>>> master
 
 .price-section {
   width: 371px;
@@ -69,10 +75,21 @@
     text-transform: uppercase;
   }
 }
+<<<<<<< HEAD
+.block-hidden {
+  display: none;
+}
+.text-block {
+  width: 300px;
+  margin: 0 auto 20px;
+  padding-top: 40px;
+
+=======
 
 .text-block {
   width: 300px;
   margin: 0 auto 20px;
+>>>>>>> master
   &__heading {
     font-family: $main-font;
     font-weight: bold;
@@ -111,8 +128,20 @@
 }
 
 @media (min-width: 768px) {
+<<<<<<< HEAD
+  .section-heading_hidden {
+    display: none;
+  }
+
+  .section-imp {
+    margin-bottom: 50px;
+  }
+  .block-hidden {
+    display: block;
+=======
   .container {
     min-width: 640px;
+>>>>>>> master
   }
 
   .section-important__content {
@@ -120,18 +149,29 @@
     justify-content: space-between;
   }
 
+<<<<<<< HEAD
+=======
   .section-heading_block {
     padding-left: 60px;
   }
+>>>>>>> master
   .price-section {
     width: 258px;
     height: 192px;
     padding: 50px;
+<<<<<<< HEAD
+    margin-left: 0;
+=======
+>>>>>>> master
   }
 
   .price-block {
     font-size: 10px;
     flex-basis: 70px;
+<<<<<<< HEAD
+    padding-top: 0;
+=======
+>>>>>>> master
 
     &__description {
       font-size: 10px;
@@ -163,6 +203,10 @@
 
   .text-block {
     width: 200px;
+<<<<<<< HEAD
+    padding-top: 0;
+=======
+>>>>>>> master
 
     &__heading {
       @include font-settings(10px, 12px);
@@ -184,18 +228,16 @@
 }
 
 @media (min-width: 1200px) {
-  .container {
-    min-width: 713px;
-  }
-
-  .section-heading_important {
-    padding-left: 80px;
+  .section-important {
+    display: flex;
+    justify-content: flex-start;
   }
 
   .price-section {
     width: 288px;
     height: 214px;
     padding: 50px;
+    margin-left: 0;
   }
 
   .price-block {
