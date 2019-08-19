@@ -3,6 +3,7 @@
     padding-top: 30px;
 }
 .easy-steps__tittle{
+    position: relative;
     font-family:$main-font;
     font-size: $secondary-font-size;
     font-weight: 700;  
@@ -13,12 +14,38 @@
     line-height: 1.333;
     text-align: left;
 }
+.easy-teps__number{
+    position: absolute;
+    left: 8%;
+    top: 100px;
+    text-transform: uppercase;
+  line-height: 0.4;
+  text-align: left;
+  color:rgb(247, 247, 247) ;
+  font-family:$main-font ;
+  font-weight:800 ;
+  font-size: 208px;
+}
+.easy-steps__word{
+    position: absolute;
+    transform: rotate(90deg);
+    left: 21%;
+    top: 110px;
+    color:rgb(247, 247, 247) ;
+    font-family: $main-font;
+    font-weight: 800;
+    font-size: 57px;
+    text-transform: uppercase;
+    line-height: 1.333;
+    text-align: left;
+}
 .easy-steps__tittle--white{
     background-color: $first-bg-line-color;
     color: $main-white-color;
     width: 194px;
     height: 22px;
     margin-bottom: 6px;
+    position: relative;
 
     &::before{
       content:"[";
@@ -30,6 +57,7 @@
 }
 .easy-steps__tittle--black{
      margin-bottom: 26px;
+     position: relative;
 &::after{
     content:"]";
       color: $main-txt-color;
@@ -68,6 +96,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
 }
 .steps__item{
     text-align: left;
@@ -89,8 +118,9 @@
     font-family:$main-font;
     font-weight: 800;
     position: absolute;
+    display: block;
     left: -18%;
-    top: -15%;
+   top: -15%;
 }
 .steps__item:first-child::before{
     content: "01.";
@@ -134,6 +164,7 @@
   width: 372px;
   margin: 0 auto;
   position: relative;
+  margin-bottom: 56px;
 
   &::before{
     display: block;
@@ -146,4 +177,101 @@
     left: -10px;
     transform: rotate(25deg);
   }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+      min-width: 748px;
+    }
+    .easy-steps{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .easy-teps__number{
+        font-size: 299px;
+        left: 0;
+        top: 0;
+        transform: translate(70%, 50%);
+    }
+    .easy-steps__word{
+        font-size: 81px;
+        left: 210px;
+        top: 70%;
+    }
+    .easy-steps__tittle{
+        font-size: 27px;
+        width: 203px;
+        margin-right: 0;
+        display: inline-block;
+        margin-bottom: 24px;
+    }
+    .easy-steps__text{
+        font-size: 9px;
+        width: 172px;
+    }
+    .steps{
+        display: flex;
+        flex-direction: column;
+        width: 310px;
+    }
+    .steps__list{
+       display: flex;
+       flex-direction: row;
+       flex-wrap: wrap;
+       align-items: flex-start;
+       justify-content: space-between;
+    }
+    .steps__item{
+        width: 150px;
+    &::before{
+        font-size: 16px;
+        margin-right: 18px;
+        left: -30%;
+        top: 0;
+    }
+    } 
+    .steps__item:last-child{
+        margin-bottom: 30px;
+    }
+    .steps__heading{
+        font-size: 9px;
+        width: 111px;
+    }
+    .steps__text{
+        font-size: 8px;
+        width: 111px;
+    }
+    .steps__decs{
+        font-size: 10px;
+        width: 280px;
+        &::before{
+            margin-right: 20px;
+        }
+      }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+      min-width: 1200px;
+    }
+    .easy-teps__number{
+        font-size: 333px;
+        left: -60px;
+        top: -20px;
+    }
+    .easy-steps__word{
+        font-size: 90px;
+        font-weight: 400;
+        left: 170px;
+        top: 50px;
+    }
+    .easy-steps__tittle{
+        font-size: 30px;
+        width: 226px;
+    }
+    .easy-steps__text{
+        font-size: 10px;
+        width: 184px;
+    }
 }
