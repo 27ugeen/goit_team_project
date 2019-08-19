@@ -1,3 +1,15 @@
 @media screen and (min-width: 748px) {
-    
+  .container {
+    min-width: 640px;
+  }
+
+  .section {
+    padding-top: 50px;
+    padding-bottom: 20px;
+  }
+
+  .section-heading {
+    @include font-settings(27px, 34px);
+  }
+  
 }
