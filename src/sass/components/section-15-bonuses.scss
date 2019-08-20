@@ -5,27 +5,11 @@
 
 .section-bonus {
   padding-top: 30px;
+  margin-bottom: 50px;
 }
-
-.section-title {
-  width: 310px;
-  margin: 0 auto;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.sub-title__block {
-  position: relative;
-
-  &::before {
-    content: '';
-    width: 20px;
-    height: 3px;
-    background-color: $first-bg-line-color;
-    position: absolute;
-    top: 20%;
-    left: -3%;
-  }
+.section-sub__bonuses{
+  width: 205px;
+  margin: 0 auto 30px;
 }
 
 .bonus-description {
@@ -34,75 +18,6 @@
   position: relative;
 }
 
-.bonus-list {
-  @extend %list;
-  list-style-position: inside;
-  counter-reset: custom-counter;
-}
-
-// Customizing li elements 
-
-.bonus-item {
-  counter-increment: custom-counter;
-  position: relative;
-  margin: 0 0 30px 20px;
-
-  &__title {
-    display: inline-block;
-    font-family: $main-font;
-    font-weight: 700;
-    color: $main-txt-color;
-    font-size: 16px;
-    text-align: left;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-  }
-
-  &__description {
-    font-size: $main-font-size;
-    line-height: 20px;
-    color: $main-txt-color;
-    font-family: $main-font;
-    font-weight: 500;
-    position: relative;
-    margin-bottom: 50px;
-    text-align: left;
-  }
-
-  &__title::before {
-    display: block;
-    width: 30px;
-    height: 30px;
-    content: '0' counter(custom-counter) '.';
-    font-family: $main-font;
-    font-weight: 800;
-    font-size: 25px;
-    color: rgba(0, 0, 0, 255);
-    text-align: left;
-    margin-right: 20px;
-    position: absolute;
-    left: -20%;
-    top: -3%;
-  }
-
-  &__description::before {
-    display: block;
-    content: '';
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    color: red;
-    top: 10%;
-    left: -10%;
-    z-index: 2;
-
-  }
-}
-
-.bg-dark {
-  background-color: $first-bg-line-color;
-  color: $main-white-color;
-}
 
 // Form Styling and positioning
 
@@ -129,6 +44,10 @@
     border: none;
     border-bottom: 1px solid lightgray;
     padding-bottom: 3px;
+
+    &:nth-child(3) {
+      margin-bottom: 30px;
+    }
   }
 
   &__input::placeholder {
@@ -136,41 +55,36 @@
     font-size: $main-font-size;
     color: $main-txt-color;
   }
-
-  &__btn {
-    display: flex;
-    justify-content: flex-end;
-  }
-
- 
 }
 
 @media (min-width: 768px) {
-  .container {
-    min-width: 640px;
-    padding: 0;
-  }
-
   .section-bonus {
-    display: flex;
-    margin-top: 75px;
+    display: grid;
+    grid-template-columns: 236px 313px;
+    grid-template-rows: auto;
+    grid-gap: 100px;
+    margin: 0 auto;
   }
 
-  .section-title {
-    width: 232px;
-    margin-right: 80px;
+  .bonus-block {
+    grid-column: 1;
+    grid-row: 1;
   }
 
-  
+  .bonus-form {
+    grid-column: 2;
+    grid-row: 1;
+    width: 313px;
+  }
+
   .section-heading {
-    @include font-settings(27px, 34px);
     display: inline;
     text-align: left;
   }
 
-  
-  .section-heading_block{
+  .section-heading_block {
     text-align: left;
+    padding-left: 0;
   }
 
   .section-sub {
@@ -203,26 +117,34 @@
     margin-bottom: 20px;
   }
 
-  .bonus-item {
+  .section-item {
     &__title {
       @include font-settings(9px, 15px);
-
+  
       &::before {
         @include font-settings(17px, 20px);
         top: 5%;
         margin-right: 20px;
       }
     }
-
+  
     &__description {
       @include font-settings(8px, 12px);
     }
   }
+
 }
 
 @media (min-width: 1200px) {
   .container {
     min-width: 713px;
+  }
+
+  .section-bonus {
+    grid-template-columns: 265px 348px;
+    grid-template-rows: auto;
+    grid-gap: 100px;
+    margin: 0 auto;
   }
 
   .section-title {
