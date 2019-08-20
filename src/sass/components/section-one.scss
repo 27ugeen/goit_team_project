@@ -17,7 +17,7 @@
 }
 .heading__image{
   margin: 0 auto;
-   background-image: url(../../../build/images/480px/compress/content-image-min.jpg);
+   background-image: url(/goit_team_project/build/images/480px/compress/content-image-min.jpg);
    width: 446px;
    height: 132px;
    position: relative;
@@ -27,7 +27,7 @@
    @media (-webkit-min-device-pixel-ratio: 2),
    (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
-    background-image: url(../../../build/images/480px/compress/content-image@2x-min.jpg);
+    background-image: url(/goit_team_project/build/images/480px/compress/content-image@2x-min.jpg);
 }
 }
 .opacity-word{
@@ -161,9 +161,10 @@ margin-top: 24px;
     
   }
   .heading__image{
-     background-image: url(../../../build/images/480px/compress/content-image-min.jpg);
+    margin: 0 auto;
+     background-image: url(/goit_team_project/build/images/768px/compress/content-image-min.jpg);
       height: 241px;
-      width: 241px;
+      width: 258px;
       margin: 0 auto;
       grid-column: 1;
       grid-row: 1;
@@ -172,7 +173,7 @@ margin-top: 24px;
      @media (-webkit-min-device-pixel-ratio: 2),
    (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
-    background-image: url(../../../build/images/480px/compress/content-image@2x-min.jpg);
+    background-image: url(/goit_team_project/build/images/768px/compress/content-image@2x-min.jpg);
 }
   }
    .heading__foreword{
@@ -276,6 +277,10 @@ font-size: 9px;
           width: 732px;
           grid-template-columns:  288px 296px;
           grid-template-rows: 270px;
+      }
+      .heading__image{
+        width: 286px;
+        height: 268px;
       }
       .desc-row-1{
           font-size: 12px;
