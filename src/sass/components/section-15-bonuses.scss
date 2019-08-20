@@ -7,7 +7,7 @@
   padding-top: 30px;
   margin-bottom: 50px;
 }
-.section-sub__bonuses{
+.section-sub__bonuses {
   width: 205px;
   margin: 0 auto 30px;
 }
@@ -17,7 +17,6 @@
   margin: 0 auto;
   position: relative;
 }
-
 
 // Form Styling and positioning
 
@@ -60,9 +59,9 @@
 @media (min-width: 768px) {
   .section-bonus {
     display: grid;
-    grid-template-columns: 236px 313px;
+    grid-template-columns: 279px 313px;
     grid-template-rows: auto;
-    grid-gap: 100px;
+    grid-column-gap: 50px;
     margin: 0 auto;
   }
 
@@ -120,19 +119,18 @@
   .section-item {
     &__title {
       @include font-settings(9px, 15px);
-  
+
       &::before {
         @include font-settings(17px, 20px);
         top: 5%;
         margin-right: 20px;
       }
     }
-  
+
     &__description {
       @include font-settings(8px, 12px);
     }
   }
-
 }
 
 @media (min-width: 1200px) {
@@ -141,9 +139,9 @@
   }
 
   .section-bonus {
-    grid-template-columns: 265px 348px;
+    grid-template-columns: 310px 348px;
     grid-template-rows: auto;
-    grid-gap: 100px;
+    grid-column-gap: 30px;
     margin: 0 auto;
   }
 
@@ -175,5 +173,9 @@
 
   .bonus-item__title::before {
     @include font-settings(19px, 23px);
+  }
+
+  .bonus-form {
+    margin: 0;
   }
 }

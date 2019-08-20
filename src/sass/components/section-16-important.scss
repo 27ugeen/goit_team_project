@@ -119,7 +119,7 @@
   .section-imp {
     margin-bottom: 50px;
     display: grid;
-    grid-template-columns: 258px 202px;
+    grid-template-columns: 279px 313px;
     grid-template-rows: auto;
     grid-row-gap: 20px;
     grid-column-gap: 100px;
@@ -131,11 +131,12 @@
   .section-important {
     grid-area: title;
   }
-  
-  .section-important__title{
+
+  .section-important__title {
     margin: 0;
     margin-bottom: 20px;
     text-align: left;
+    display: block;
   }
 
   .text-important {
@@ -210,19 +211,19 @@
 
 @media (min-width: 1200px) {
   .section-imp {
-    
-    grid-template-columns: 288px 225px;
-    grid-template-rows: auto;
-    grid-row-gap: 10px;
-    grid-column-gap: 100px;
-    margin: 0 auto;
-    grid-template-areas: 'price title' 'price text';
-    text-align: left;
+    grid-template-columns: 310px 348px;
+
+    grid-column-gap: 30px;
   }
 
   .section-important {
     display: flex;
     justify-content: flex-start;
+    
+  }
+
+  .section-important__title{
+    margin-left: 50px;
   }
 
   .price-section {
@@ -246,6 +247,7 @@
       width: 25px;
       left: -5%;
     }
+    
 
     .text-block {
       width: 200px;
