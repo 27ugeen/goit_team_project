@@ -5,17 +5,28 @@
 .section-heading_register {
   text-align: left;
   position: relative;
-  padding-left: 40px;
+  margin: 0;
+}
+
+.heading-register {
+  width: 190px;
+}
+
+.text-bl-register {
+  text-align: left;
+}
+.bl-register_title {
+  margin-bottom: 10px;
 }
 
 .section-sub__register {
   width: 240px;
   text-align: left;
-  padding-left: 50px;
+  padding-left: 40px;
 }
 
 .opacity-symbol__register {
-  left: -40%;
+  left: -20%;
   top: 50%;
 }
 
@@ -28,8 +39,28 @@
 }
 
 @media (min-width: 768px) {
-  .section-register {
-    display: flex;
+  .section-reg {
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: 279px 313px;
+    grid-template-rows: auto;
+    grid-column-gap: 50px;
+
+    margin: 0 auto;
+    grid-template-areas: 'title text';
+    text-align: left;
+  }
+
+  .section-important__title {
+    margin: 0;
+  }
+
+  .title-block {
+    grid-area: title;
+  }
+
+  .text-bl-register {
+    grid-area: text;
   }
 
   .text-bl-register {
@@ -54,12 +85,6 @@
     padding-left: 0;
   }
 
- 
-
-  .section-register {
-    margin-bottom: 100px;
-  }
-
   .opacity-symbol__register {
     left: 55%;
     top: 50%;
@@ -69,6 +94,11 @@
 @media (min-width: 1200px) {
   .section-heading_register {
     width: 310px;
+  }
+
+  .section-reg {
+    grid-template-columns: 310px 348px;
+    grid-column-gap: 30px;
   }
   .bl-register_title {
     @include font-settings(16px, 24px);

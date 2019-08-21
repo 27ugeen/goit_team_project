@@ -1,5 +1,5 @@
 // Price block customization
-.section-imp{
+.section-imp {
   margin-bottom: 50px;
 }
 
@@ -72,9 +72,6 @@
     text-transform: uppercase;
   }
 }
-.block-hidden {
-  display: none;
-}
 .text-block {
   width: 300px;
   margin: 0 auto 20px;
@@ -118,20 +115,32 @@
 }
 
 @media (min-width: 768px) {
-  .section-heading_hidden {
-    display: none;
-  }
-
   .section-imp {
     margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: 279px 313px;
+    grid-template-rows: auto;
+    grid-row-gap: 20px;
+    grid-column-gap: 100px;
+    margin: 0 auto;
+    grid-template-areas: 'price title' 'price text';
+    text-align: left;
   }
-  .block-hidden {
+
+  .section-important {
+    grid-area: title;
+  }
+
+  .section-important__title {
+    margin: 0;
+    margin-bottom: 20px;
+    text-align: left;
     display: block;
   }
 
-  .section-important__content {
-    display: flex;
-    justify-content: space-between;
+  .text-important {
+    grid-area: text;
+    align-self: start;
   }
 
   .price-section {
@@ -139,6 +148,8 @@
     height: 192px;
     padding: 50px;
     margin-left: 0;
+    grid-area: price;
+    align-self: end;
   }
 
   .price-block {
@@ -198,9 +209,20 @@
 }
 
 @media (min-width: 1200px) {
+  .section-imp {
+    grid-template-columns: 310px 348px;
+
+    grid-column-gap: 30px;
+  }
+
   .section-important {
     display: flex;
     justify-content: flex-start;
+    
+  }
+
+  .section-important__title{
+    margin-left: 50px;
   }
 
   .price-section {
@@ -224,6 +246,7 @@
       width: 25px;
       left: -5%;
     }
+    
 
     .text-block {
       width: 200px;
