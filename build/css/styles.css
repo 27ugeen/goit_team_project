@@ -1970,6 +1970,82 @@ h3 + p {
   margin-bottom: 10px;
 }
 
+.new-profession {
+  padding-top: 64px;
+}
+
+.new-profession__title {
+  font-family: "Acrom", sans-serif;
+  margin: 0 auto;
+  width: 240px;
+  text-align: left;
+  margin-bottom: 26px;
+}
+
+.new-profession__title--top {
+  font-size: 18px;
+  font-weight: 800;
+  text-transform: uppercase;
+  line-height: 1.333;
+  margin-bottom: 24px;
+}
+
+.new-profession__title--top:before {
+  content: "[";
+  height: 16px;
+  width: 3px;
+  margin-right: 8px;
+}
+
+.new-profession__title--top:after {
+  content: "]";
+  height: 16px;
+  width: 3px;
+  margin-left: 8px;
+}
+
+.new-profession__title--sub {
+  font-size: 14px;
+  padding-left: 15px;
+  font-weight: 500;
+  line-height: 1.444;
+  position: relative;
+}
+
+.new-profession__title--sub:before {
+  content: "";
+  position: absolute;
+  left: -10%;
+  top: 10%;
+  height: 3px;
+  width: 16px;
+  /*margin-right: 10px;*/
+  color: #000000;
+}
+
+.new-profession__image {
+  margin-bottom: 40px;
+}
+
+.new-system {
+  margin: 0 auto;
+  width: 216px;
+  line-height: 1.444;
+  text-align: left;
+  font-family: "Acrom", sans-serif;
+  font-size: 14px;
+}
+
+.new-system__text--bold {
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.new-system__text--normal {
+  font-weight: 400;
+}
+
 .image {
   position: relative;
 }
