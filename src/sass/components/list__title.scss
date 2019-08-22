@@ -6,12 +6,10 @@
   text-align: left;
   margin-bottom: 30px;
   @media screen and (min-width: 768px) {
-    font-size: 9px;
-    line-height: 17px;
+    @include font-settings(9px, 17px);
     margin: 0;
   }
   @media screen and (min-width: 1200px) {
-    font-size: 15px;
-    line-height: 23px;
+    @include font-settings(15px, 23px);
   }
 }
