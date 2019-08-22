@@ -56,6 +56,10 @@
   }
 }
 
+.btn-form{
+  margin: 0;
+}
+
 @media (min-width: 768px) {
   .section-bonus {
     display: grid;
@@ -115,22 +119,6 @@
     text-align: left;
     margin-bottom: 20px;
   }
-
-  .section-item {
-    &__title {
-      @include font-settings(9px, 15px);
-
-      &::before {
-        @include font-settings(17px, 20px);
-        top: 5%;
-        margin-right: 20px;
-      }
-    }
-
-    &__description {
-      @include font-settings(8px, 12px);
-    }
-  }
 }
 
 @media (min-width: 1200px) {
@@ -161,18 +149,6 @@
 
   .section-sub {
     @include font-settings(10px, 15px);
-  }
-
-  .bonus-item__title {
-    @include font-settings(10px, 16px);
-  }
-
-  .bonus-item__description {
-    @include font-settings(9px, 13px);
-  }
-
-  .bonus-item__title::before {
-    @include font-settings(19px, 23px);
   }
 
   .bonus-form {
