@@ -91,9 +91,7 @@ font-size: $main-font-size;
 }
     
 @media screen and (min-width: 768px) {
-    .container {
-      min-width: 748px;
-    }
+   
     .hedline{
         padding-top: 88px;
         display: grid;
@@ -132,9 +130,7 @@ font-size: $main-font-size;
 
     
 @media screen and (min-width: 1200px) {
-    .container {
-      min-width: 1200px;
-    }
+    
     .hedline{
         padding-top: 42px;
     }

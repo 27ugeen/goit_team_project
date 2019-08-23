@@ -41,3 +41,48 @@
   text-transform: uppercase;
   @extend %btn;
 }
+
+.section__heading--black{
+  text-transform: uppercase;
+  line-height: 1.333;
+  text-align: left;
+  font-family:$main-font ;
+  font-size: 18px;
+  font-weight: 800;
+
+&::before{
+  content: "[";
+  width: 4px;
+  height: 18px;
+  margin-right: 10px;
+}
+}
+.section__heading--black::after{
+  content: "]";
+  width: 4px;
+  height: 18px;
+  margin-left: 10px;
+}
+
+.section__heading--white{
+  background-color: $first-bg-line-color;
+  color: $main-white-color;
+  height: 22px;
+ font-weight: 800;
+  line-height: 1.333;
+text-transform: uppercase;
+height:22px;
+
+&:before{
+ content: "[";
+  color: #fff;
+  width: 4px;
+  height: 16px;
+  margin-right: 10px;}
+
+.section__heading--white:after{
+  content: "]";
+  color: #fff;
+  width: 4px;
+  height: 16px;
+  margin-right: 10px;}
