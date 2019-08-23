@@ -23,8 +23,6 @@
   width: 240px;
   text-align: left;
   padding-left: 40px;
-
-  
 }
 
 .opacity-symbol__register {
@@ -44,7 +42,7 @@
   .section-reg {
     margin-bottom: 50px;
     display: grid;
-    grid-template-columns: 279px 280px;
+    grid-template-columns: 279px 313px;
     grid-template-rows: auto;
     grid-column-gap: 50px;
 
@@ -53,7 +51,9 @@
     text-align: left;
   }
 
-  
+  .section-important__title {
+    margin: 0;
+  }
 
   .title-block {
     grid-area: title;
@@ -97,7 +97,8 @@
   }
 
   .section-reg {
-    grid-column-gap: 100px;
+    grid-template-columns: 310px 348px;
+    grid-column-gap: 30px;
   }
   .bl-register_title {
     @include font-settings(16px, 24px);

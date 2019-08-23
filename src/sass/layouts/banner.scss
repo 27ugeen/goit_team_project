@@ -35,7 +35,8 @@
   }
   &__button {
     @extend %link;
-    width: 218px;
+    padding: 0 30px;
+    width: max-content;
     height: 54px;
     box-shadow: 0px 5px 6px rgba(196, 87, 15, 0.26);
     background-color: $accent-txt-color;
