@@ -1,5 +1,6 @@
 .opportunity__img{
   width: 100%;
+  margin-bottom: 60px;
 }
 .opportunity__tenders-img {
   right: 45px;
@@ -140,6 +141,10 @@
 @media (min-width: 768px) {
   .opportunity__img {
     width: auto;
+  }
+  .sub-heading{
+    width: 210px;
+    margin-top: 30px;
   }
   .opportunity {
     display: grid;
