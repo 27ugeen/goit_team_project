@@ -45,10 +45,9 @@
     grid-template-columns: 279px 313px;
     grid-template-rows: auto;
     grid-column-gap: 50px;
-
-    margin: 0 auto;
+    justify-content: center;
     grid-template-areas: 'title text';
-    text-align: left;
+    margin: 0 auto;
   }
 
   .section-important__title {
@@ -92,18 +91,23 @@
   }
 }
 @media (min-width: 1200px) {
+  .section-reg {
+    grid-template-columns: 310px 348px;
+    grid-column-gap: 30px;
+  
+    
+  }
+  
+  
   .section-heading_register {
     width: 310px;
   }
 
-  .section-reg {
-    grid-template-columns: 310px 348px;
-    grid-column-gap: 30px;
-  }
+  
+
   .bl-register_title {
     @include font-settings(16px, 24px);
   }
-  .section-reg {
-    margin-left: 0;
-  }
+
+  
 }
