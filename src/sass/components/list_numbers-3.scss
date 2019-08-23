@@ -1,0 +1,31 @@
+.list_numbers-3{
+    list-style: none;
+    position: relative;
+    counter-reset: none;
+    counter-increment: b;
+    margin: 0 0 30px 20px;
+
+    &:before{
+    position: absolute;
+    @include pseudo($display: block, $content:'[ 00' counter(b) ' ]');
+    width: 51px;
+    height: 9px;
+    background-color: #ff6b08;
+    font-weight: 800;
+    @include font-settings(14px, 100%);
+    color: $main-white-color;
+    text-align: center;
+    top: 20px;
+    left: -40px;
+    transform: rotate(-90deg);
+    }
+}
+@media(min-width:768px){
+   .list-3:before{
+        width: 22px;
+        height: 7px;
+        @include font-settings(6px, 100%);
+        top: 12px;
+        left: -30px;
+   }
+}
