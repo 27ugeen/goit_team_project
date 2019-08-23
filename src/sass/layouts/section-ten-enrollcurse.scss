@@ -23,6 +23,7 @@
 }
 .img__image{
     width: 100%;
+    margin-top: 40px;
 }
 .features__list__paragraph, .features__list__title {
   @include font-settings(14px, 20px);

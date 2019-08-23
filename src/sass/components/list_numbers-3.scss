@@ -21,7 +21,7 @@
     }
 }
 @media(min-width:768px){
-   .list-3:before{
+   .list_numbers-3:before{
         width: 22px;
         height: 7px;
         @include font-settings(6px, 100%);
