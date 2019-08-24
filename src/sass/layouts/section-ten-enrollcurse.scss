@@ -1,0 +1,51 @@
+.enrollcurse{
+  width: 300px;
+  margin: 0 auto;
+}
+.header__content {
+  font-size: $main-font-size;
+  line-height: 20px;
+  color: $main-txt-color;
+  font-family: $main-font;
+  font-weight: 500;
+  margin-bottom: 30px;
+  padding-left: 27px;
+
+  &:before {
+    left: 0;
+    top: 9%;
+  }
+
+  &__blue {
+      height: 20px;
+      background: $second-bg-line-color;
+    }
+}
+.img__image{
+    width: 100%;
+    margin-top: 40px;
+}
+.features__list__paragraph, .features__list__title {
+  @include font-settings(14px, 20px);
+  font-family: $main-font;
+}
+.features__list__paragraph{
+    font-weight: 500;
+    color: $secondary-txt-color;
+}
+.features__list__item:not(:last-child){
+    margin-bottom: 28px;
+}
+.features__list{
+    padding-left: 15px;
+    margin-top: 38px;
+    list-style-type: square;
+
+    &__title {
+      font-family: $main-font;
+      font-weight: 900;
+      text-transform: uppercase;
+      @include font-settings(14px, 20px);
+      margin-bottom: 10px;
+    }
+}

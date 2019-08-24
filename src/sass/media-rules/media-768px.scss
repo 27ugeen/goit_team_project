@@ -3,10 +3,11 @@
     min-width: 640px;
     margin: 0 auto;
   }
+
   .section-title {
-    margin: 0 ;
-    
+    margin: 0;
   }
+  
   .section {
     padding-top: 50px;
     padding-bottom: 20px;
@@ -16,9 +17,5 @@
     @include font-settings(27px, 34px);
   }
 
-  .section-sub::before{
-    top: 20%;
-  }
-
+  
 }
-
