@@ -1,3 +1,8 @@
+.only-now-section {
+  width: 300px;
+  margin: 0 auto;
+}
+
 .image {
   position: relative;
 }
@@ -75,6 +80,7 @@
   font-weight: 800;
   font-size: $main-font-size;
   margin: 60px 0 35px;
+  text-transform: uppercase;
 }
   
 .only-now-list {
