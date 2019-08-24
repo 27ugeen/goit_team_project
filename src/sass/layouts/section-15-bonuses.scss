@@ -1,3 +1,4 @@
+
 .container {
   padding-left: 20px;
   padding-right: 20px;
@@ -56,25 +57,32 @@
   }
 }
 
-.btn-form{
-  margin: 0;
-}
+
 
 @media (min-width: 768px) {
+  .container{
+    min-width: 640px ;
+  }
+
+  
   .section-bonus {
+    margin: 0 auto;
     display: grid;
     grid-template-columns: 279px 313px;
     grid-template-rows: auto;
     grid-column-gap: 50px;
-    margin: 0 auto;
+    justify-content: center;
+    
   }
 
   .bonus-block {
+    
     grid-column: 1;
     grid-row: 1;
   }
 
   .bonus-form {
+    
     grid-column: 2;
     grid-row: 1;
     width: 313px;
@@ -122,16 +130,17 @@
 }
 
 @media (min-width: 1200px) {
-  .container {
-    min-width: 713px;
-  }
-
+  
   .section-bonus {
+    margin: 0 auto;
     grid-template-columns: 310px 348px;
     grid-template-rows: auto;
     grid-column-gap: 30px;
-    margin: 0 auto;
+    justify-content: center;
+    
   }
+
+ 
 
   .section-title {
     width: 260px;
