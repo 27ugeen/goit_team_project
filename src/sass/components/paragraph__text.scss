@@ -1,0 +1,21 @@
+.paragraph__text{
+    margin: 0 auto;
+    line-height: 1.444;
+    text-align: left;
+    font-family: "Acrom",sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+@media screen and (min-width: 768px){
+    .paragraph__text{
+        font-size: 8px;
+        line-height: 1.5;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .paragraph__text{
+        font-size: 9px;
+    }
+}

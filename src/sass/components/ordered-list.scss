@@ -1,4 +1,4 @@
-.section-list {
+.ordered-list {
   @extend %list;
   list-style-position: inside;
   counter-reset: custom-counter;
@@ -6,7 +6,7 @@
 
 // Customizing li elements
 
-.section-item {
+.ordered-item {
   position: relative;
   margin: 0 0 20px 20px;
   counter-increment: custom-counter;
@@ -65,7 +65,7 @@
 }
 
 @media (min-width: 768px) {
-  .section-item {
+  .ordered-item {
     &__title {
       @include font-settings(9px, 15px);
 
@@ -83,15 +83,17 @@
 }
 
 @media (min-width: 1200px) {
-  .bonus-item__title {
-    @include font-settings(10px, 16px);
-  }
+  .ordered-item {
+    &__title {
+      @include font-settings(10px, 16px);
+    }
 
-  .bonus-item__description {
-    @include font-settings(9px, 13px);
-  }
+    &__description {
+      @include font-settings(9px, 13px);
+    }
 
-  .bonus-item__title::before {
-    @include font-settings(19px, 23px);
+    &::before {
+      @include font-settings(19px, 23px);
+    }
   }
 }
