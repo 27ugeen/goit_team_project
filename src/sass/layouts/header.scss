@@ -4,7 +4,7 @@
   left: 15px;
   right: 10px;
   z-index: 999;
-  .wrapper {
+  .wrapp {
     @include center-flex($type: 'ver_between');
   }
   h1 {
@@ -17,14 +17,14 @@
   }
 }
 @media screen and (min-width: 768px) {
-  .wrapper {
+  .wrapp {
     width: 640px;
     margin: 0 auto;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .wrapper {
+  .wrapp {
     width: 1128px;
   }
 }

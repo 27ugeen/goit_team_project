@@ -1,8 +1,3 @@
-.container {
-  width: 445px;
-  margin: 0 auto;
-}
-
 .banner {
   background-image: radial-gradient(at center, #2d3447, #181c27);
   background-color: #181c27;
@@ -113,120 +108,120 @@
     height: 11px;
     fill: $main-white-color;
   }
-}
-.lit-logo {
-  display: none;
-}
-.big-logo {
-  display: block;
-}
-
-.banner {
-  padding: 90px 0;
-  &__img {
+  .lit-logo {
+    display: none;
+  }
+  .big-logo {
     display: block;
-    background-repeat: no-repeat;
-    background-position: right bottom;
-    position: absolute;
-    bottom: -90px;
-    right: 0;
-    z-index: 2;
-  }
-  &__logo {
-    position: absolute;
-    font-size: 236px;
-    left: 0;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    margin: 0;
-  }
-  &__content {
-    position: relative;
-    padding: 90px 0 95px;
-  }
-  &__text {
-    position: relative;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    z-index: 3;
-    display: grid;
-    grid-template-columns: 220px 200px 220px;
-    grid-template-rows: auto;
-    grid-template-areas: 'title title pr' 'pl pl soc' 'but . .';
-  }
-  &__title {
-    grid-area: title;
-    span {
-      display: block;
-    }
-    span:first-child::after {
-      content: '';
-      display: inline-block;
-      background-color: #fff;
-      width: 44px;
-      height: 6px;
-      vertical-align: middle;
-      margin: 0 20px 5px;
-    }
-    span:nth-child(2) {
-      display: none;
-    }
-    span:last-child::before {
-      content: '';
-      display: inline-block;
-      background-color: #fff;
-      width: 44px;
-      height: 6px;
-      vertical-align: middle;
-      margin: 0 20px 5px;
-    }
   }
 
-  &__slider {
-    grid-area: pl;
-    justify-self: start;
-    margin: 0 0 30px 30px;
-    width: 220px;
-  }
-  &__post-bot {
-    grid-area: pr;
-    justify-self: end;
-    margin: 0;
-    width: 157px;
-    font-size: 11px;
-    line-height: 17px;
-    span {
-      font-size: 10px;
-      line-height: 14px;
+  .banner {
+    padding: 90px 0;
+    &__img {
+      display: block;
+      background-repeat: no-repeat;
+      background-position: right bottom;
+      position: absolute;
+      bottom: -90px;
+      right: 0;
+      z-index: 2;
     }
-  }
-  &__social-lit {
-    grid-area: soc;
-    justify-self: end;
-  }
-  &__button {
-    grid-area: but;
-  }
-  h2 {
-    width: 352px;
-    font-size: 45px;
-    line-height: 58px;
-    margin: 0 0 30px;
-  }
-  &__post-up {
-    width: 180px;
-    font-size: 8px;
-    line-height: 13px;
-    font-weight: bold;
-  }
-  &__button {
-    width: 110px;
-    height: 28px;
-    font-size: 7px;
-    line-height: 28px;
+    &__logo {
+      position: absolute;
+      font-size: 236px;
+      left: 0;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      margin: 0;
+    }
+    &__content {
+      position: relative;
+      padding: 90px 0 95px;
+    }
+    &__text {
+      position: relative;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      z-index: 3;
+      display: grid;
+      grid-template-columns: 220px 200px 220px;
+      grid-template-rows: auto;
+      grid-template-areas: 'title title pr' 'pl pl soc' 'but . .';
+    }
+    &__title {
+      grid-area: title;
+      span {
+        display: block;
+      }
+      span:first-child::after {
+        content: '';
+        display: inline-block;
+        background-color: #fff;
+        width: 44px;
+        height: 6px;
+        vertical-align: middle;
+        margin: 0 20px 5px;
+      }
+      span:nth-child(2) {
+        display: none;
+      }
+      span:last-child::before {
+        content: '';
+        display: inline-block;
+        background-color: #fff;
+        width: 44px;
+        height: 6px;
+        vertical-align: middle;
+        margin: 0 20px 5px;
+      }
+    }
+
+    &__slider {
+      grid-area: pl;
+      justify-self: start;
+      margin: 0 0 30px 30px;
+      width: 220px;
+    }
+    &__post-bot {
+      grid-area: pr;
+      justify-self: end;
+      margin: 0;
+      width: 157px;
+      font-size: 11px;
+      line-height: 17px;
+      span {
+        font-size: 10px;
+        line-height: 14px;
+      }
+    }
+    &__social-lit {
+      grid-area: soc;
+      justify-self: end;
+    }
+    &__button {
+      grid-area: but;
+    }
+    h2 {
+      width: 352px;
+      font-size: 45px;
+      line-height: 58px;
+      margin: 0 0 30px;
+    }
+    &__post-up {
+      width: 180px;
+      font-size: 8px;
+      line-height: 13px;
+      font-weight: bold;
+    }
+    &__button {
+      width: 110px;
+      height: 28px;
+      font-size: 7px;
+      line-height: 28px;
+    }
   }
 }
 
