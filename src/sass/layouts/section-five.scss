@@ -6,7 +6,7 @@
     width: 215px;
     margin: 0 auto 20px;
     font-size: 18px;
-    line-height: 24px;
+    cdline-height: 24px;
     color: $main-txt-color;
     font-family: $main-font;
     font-weight: 800;
@@ -41,7 +41,6 @@
     }
   }
 }
-
 @media screen and (min-width: 768px) {
   .sect-warning {
     display: grid;
