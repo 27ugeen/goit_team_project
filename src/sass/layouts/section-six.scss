@@ -6,21 +6,9 @@
   &__title {
     width: 190px;
     margin: 0 0 20px;
-    font-size: 18px;
-    line-height: 24px;
-    color: $main-txt-color;
-    font-family: $main-font;
-    font-weight: 800;
-    text-transform: uppercase;
   }
   &__post {
-    width: 340px;
-    margin: 0 0 40px;
-    font-size: $main-font-size;
-    line-height: $main-line-height;
-    color: $main-txt-color;
-    font-family: $main-font;
-    font-weight: 500;
+    width: 360px;
   }
   &__text {
     width: 370px;
@@ -37,10 +25,11 @@
       background-color: $first-bg-line-color;
       font-weight: 800;
     }
-  }
-  h3 + p {
-    font-weight: 600;
-    margin: 0;
+
+    h3 p {
+      font-weight: 600;
+      margin: 0;
+    }
   }
   &__img1,
   &__img2 {
@@ -54,24 +43,57 @@
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: auto;
-    grid-template-areas:
-      'st_txt img_1'
+    grid-template-areas: 'st_txt img_1'
       'img_2 title_1'
       'img_2 title_2';
+    &__descript {
+      grid-area: st_txt;
+    }
+    &__img1 {
+      grid-area: img_1;
+      justify-self: end;
+    }
+    &__img2 {
+      grid-area: img_2;
+    }
+    &__img1,
+    &__img2 {
+      margin: 0;
+      width: 274px;
+    }
+
+    .text1 {
+      grid-area: title_1;
+    }
+
+    .text2 {
+      grid-area: title_2;
+    }
+
+    &__text {
+      display: flex;
+      justify-content: space-between;
+      width: 320px;
+
+      h3 {
+        width: 108px;
+        margin: 0;
+        span {
+          font-size: 9px;
+          line-height: 15px;
+        }
+      }
+    }
   }
-  &__descript {
-    grid-area: st_txt;
-  }
-  &__img1 {
-    grid-area: img_1;
-  }
-  &__img2 {
-    grid-area: img_2;
-  }
-  .text1 {
-    grid-area: title_1;
-  }
-  .text2 {
-    grid-area: title_2;
+
+  .text1__post,
+  .text2__post {
+    width: 172px;
+
+    p {
+      font-size: 8px;
+      line-height: 14px;
+      font-weight: 600;
+    }
   }
 }

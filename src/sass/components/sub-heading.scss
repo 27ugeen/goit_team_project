@@ -2,12 +2,11 @@
   font-family: $main-font;
   font-size: $main-font-size;
   width: 310px;
-  margin: 0 auto;
+  margin: 0 auto 40px;
   font-weight: 500;
   color: $main-txt-color;
   padding-left: 38px;
   position: relative;
-  margin-bottom: 40px;
   text-align: left;
 
   &:before {
