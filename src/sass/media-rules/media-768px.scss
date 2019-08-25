@@ -1,13 +1,13 @@
 @media screen and (min-width: 748px) {
   .container {
-    min-width: 640px;
+    width: 640px;
     margin: 0 auto;
   }
 
   .section-title {
     margin: 0;
   }
-  
+
   .section {
     padding-top: 50px;
     padding-bottom: 20px;
@@ -16,6 +16,4 @@
   .section-heading {
     @include font-settings(27px, 34px);
   }
-
-  
 }

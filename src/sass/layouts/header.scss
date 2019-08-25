@@ -15,6 +15,9 @@
     height: 17px;
     fill: $main-white-color;
   }
+  &__btn {
+    @extend %btn;
+  }
 }
 @media screen and (min-width: 768px) {
   .wrapp {
