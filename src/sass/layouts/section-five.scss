@@ -5,21 +5,9 @@
   &__title {
     width: 215px;
     margin: 0 auto 20px;
-    font-size: 18px;
-    cdline-height: 24px;
-    color: $main-txt-color;
-    font-family: $main-font;
-    font-weight: 800;
-    text-transform: uppercase;
   }
   &__post {
-    width: 215px;
-    margin: 0 auto 40px;
-    font-size: $main-font-size;
-    line-height: $main-line-height;
-    color: $main-txt-color;
-    font-family: $main-font;
-    font-weight: 500;
+    width: 280px;
   }
   &__list-item {
     width: 305px;
