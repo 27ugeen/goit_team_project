@@ -1,6 +1,6 @@
-.container {
-  min-width: 480px;
-}
+// .container {
+//   min-width: 480px;
+// }
 .heading {
   padding-top: 56px;
   text-align: center;
@@ -142,9 +142,9 @@
   margin-bottom: 40px;
 }
 @media screen and (min-width: 768px) {
-  .container {
-    min-width: 748px;
-  }
+  // .container {
+  //   min-width: 748px;
+  // }
 
   .heading {
     width: 626px;
@@ -264,9 +264,9 @@
 }
 
 @media screen and (min-width: 1200px) {
-  .container {
-    margin: 0 auto;
-  }
+  // .container {
+  //   margin: 0 auto;
+  // }
 
   .heading {
     width: 732px;

@@ -1,7 +1,12 @@
 .banner {
-  background-image: radial-gradient(at center, #2d3447, #181c27);
+  background-image: radial-gradient(at center, #2e3549, #181c27);
   background-color: #181c27;
   padding: 65px 0 40px;
+  &__content {
+    background-image: url(../../images/GoIt-480.png);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
   &__img {
     display: none;
   }
@@ -28,31 +33,6 @@
     text-transform: uppercase;
     margin: 0 auto;
   }
-  &__button {
-    @extend %link;
-    padding: 0 30px;
-    width: max-content;
-    height: 54px;
-    box-shadow: 0px 5px 6px rgba(196, 87, 15, 0.26);
-    background-color: $accent-txt-color;
-    text-transform: uppercase;
-    font-size: 12px;
-    font-family: $main-font;
-    font-weight: bold;
-    color: $main-white-color;
-    line-height: 54px;
-    margin: 0 auto;
-  }
-  &__logo {
-    text-transform: uppercase;
-    font-size: 120px;
-    line-height: 70px;
-    color: rgba(0, 0, 0, 0.2);
-    font-family: $main-font;
-    font-weight: 800;
-    text-align: center;
-    margin: 0 auto 44px;
-  }
   &__post-bot {
     text-align: left;
     margin-bottom: 30px;
@@ -63,13 +43,10 @@
     }
   }
 }
-.big-logo {
-  display: none;
-}
 .banner__slider {
   position: relative;
   width: 420px;
-  margin: 0 auto 30px;
+  margin: 0 auto 150px;
 
   button {
     position: absolute;
@@ -108,13 +85,6 @@
     height: 11px;
     fill: $main-white-color;
   }
-  .lit-logo {
-    display: none;
-  }
-  .big-logo {
-    display: block;
-  }
-
   .banner {
     padding: 90px 0;
     &__img {
@@ -126,16 +96,8 @@
       right: 0;
       z-index: 2;
     }
-    &__logo {
-      position: absolute;
-      font-size: 236px;
-      left: 0;
-      right: 0;
-      top: 50%;
-      transform: translateY(-50%);
-      margin: 0;
-    }
     &__content {
+      background-image: url(../images/GoIt-768.png);
       position: relative;
       padding: 90px 0 95px;
     }
@@ -147,9 +109,10 @@
       left: 0;
       z-index: 3;
       display: grid;
-      grid-template-columns: 220px 200px 220px;
+
+      grid-template-columns: 50% 50%;
       grid-template-rows: auto;
-      grid-template-areas: 'title title pr' 'pl pl soc' 'but . .';
+      grid-template-areas: 'title pr' 'pl soc' 'but .';
     }
     &__title {
       grid-area: title;
@@ -178,7 +141,6 @@
         margin: 0 20px 5px;
       }
     }
-
     &__slider {
       grid-area: pl;
       justify-self: start;
@@ -203,6 +165,8 @@
     }
     &__button {
       grid-area: but;
+      justify-self: start;
+      margin: 0 0 0 55px;
     }
     h2 {
       width: 352px;
@@ -216,28 +180,18 @@
       line-height: 13px;
       font-weight: bold;
     }
-    &__button {
-      width: 110px;
-      height: 28px;
-      font-size: 7px;
-      line-height: 28px;
-    }
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .container {
-    width: 713px;
-  }
   .social__svg {
     width: 11px;
     height: 11px;
     fill: $main-white-color;
   }
   .banner {
-    &__text {
-      grid-template-columns: 237px 237px 237px;
-      grid-template-rows: auto;
+    &__content {
+      background-image: url(../images/GoIt-1200.png);
     }
     &__social-lit {
       display: none;
