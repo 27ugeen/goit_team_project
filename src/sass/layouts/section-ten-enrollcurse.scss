@@ -23,29 +23,49 @@
 }
 .img__image{
     width: 100%;
-    margin-top: 40px;
-}
-.features__list__paragraph, .features__list__title {
-  @include font-settings(14px, 20px);
-  font-family: $main-font;
-}
-.features__list__paragraph{
-    font-weight: 500;
-    color: $secondary-txt-color;
-}
-.features__list__item:not(:last-child){
-    margin-bottom: 28px;
 }
 .features__list{
     padding-left: 15px;
     margin-top: 38px;
     list-style-type: square;
-
-    &__title {
-      font-family: $main-font;
-      font-weight: 900;
-      text-transform: uppercase;
-      @include font-settings(14px, 20px);
-      margin-bottom: 10px;
-    }
+}
+@media screen and (min-width: 768px){
+  .enrollcurse{
+    width: auto;
+    display: grid;
+    grid-template-areas: "image head"
+                        "image contents";
+    grid-template-rows: 129px 200px;
+  }
+  .enrollcurse__header{
+    order: 1;
+    padding-left: 70px;
+  }
+  .enrollcurse__features{
+    order: 2;
+  }
+  .header__title{
+    margin: 0;
+  }
+  .features__list{
+    margin-top: 25px;
+    padding-left: 85px;
+    margin-bottom: 0;
+  }
+  .enrollcurse > .enrollcurse__header{
+    grid-area: head;
+  }
+  .enrollcurse > .enrollcurse__img{
+    grid-area: image;
+  }
+  .enrollcurse > .enrollcurse__contents{
+    grid-area: contents;
+  }
+  .enrollcurse__img{
+    width: 310px;
+    height: 330px;
+  }
+  .section-X__list-item{
+    margin-bottom: 10px;
+  }
 }
