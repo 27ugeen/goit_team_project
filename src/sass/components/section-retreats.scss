@@ -1,21 +1,20 @@
 // ---480px
-// Use it for whole .section or for a class .wrapper
-.wrapper {
-  margin: 50px auto;
+.section {
+  margin: 0 0 50px 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 @media screen and (min-width: 768px) {
-  .wrapper {
+  .section {
     width: 640px;
-    margin: 90px auto;
+    margin: 0 0 90px 0;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .wrapper {
+  .section {
     width: 714px;
-    margin: 120px auto;
+    margin: 0 0 120px 0;
   }
 }
