@@ -1,0 +1,159 @@
+.video-section {
+  width: 300px;
+  margin: 0 auto;
+}
+
+.video-section-heading {
+  font-family: $main-font;
+  font-weight: 800;
+  text-transform: uppercase;
+  line-height: $third-line-height;
+  
+}
+
+.section-sub__video-course {
+  width: 215px;
+  margin: 0 auto 40px;
+}
+
+.video-course-img1 {
+  margin-bottom: 30px;
+}
+
+.video-course-img2 {
+  display: none;
+}
+
+.video-course__sub-title {
+  font-family: $main-font;
+  color: $main-white-color;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.video-course__text {
+  font-family: $main-font;
+  color: $secondary-txt-color;
+  font-weight: 400;
+  margin: 15px 0px 45px;
+}
+
+.video-course-title__list {
+  font-family: $main-font;
+  font-weight: 800;
+  font-size: $main-font-size;
+  margin: 60px 0 35px;
+  text-transform: uppercase;
+}
+    
+.video-course-list {
+  @extend %list;
+}
+    
+.video-course-item {
+  list-style: none;
+  position: relative;
+  counter-reset: none;
+  counter-increment: b;
+  margin: 0 0 30px 20px;
+    
+  &:before {
+    position: absolute;
+    @include pseudo($display: block, $content: '[ 00' counter(b) ' ]');
+    width: 48px;
+    height: 9px;
+    background-color: $accent-txt-color;
+    font-family: $main-font;
+    font-weight: 800;
+    @include font-settings(13px, 100%);
+    color: #fff;
+    text-align: center;
+    top: 25px;
+    left: -40px;
+    transform: rotate(-90deg);
+  }
+  
+  &:last-child {
+    margin-bottom: 54px;
+  }
+}
+    
+.video-course-item {
+  margin-bottom: 30px; 
+  font-family: $main-font;
+  font-size: $main-font-size;
+}
+    
+.video-course-item__title {
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: $main-font-size;
+}
+  
+.video-course-item__text {
+  font-weight: 400;  
+}
+
+.about-price {
+  font-family: $main-font;
+  width: 300px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin-bottom: 90px;
+}
+
+.about-price-block {
+  margin-left: 13px;
+}
+
+.price__text {
+  font-weight: 600;
+  background-color: $second-bg-line-color;
+  line-height: $third-line-height;
+  font-size: $secondary-font-size;
+}
+
+.price__old{
+    font-weight: 800;
+    font-size: $secondary-font-size;
+    color: $secondary-txt-color;
+    text-decoration: line-through;
+    margin-bottom: 20px;
+}
+
+.price__new {
+    font-weight: 800;
+    font-size: 30px;
+}
+
+
+@media screen and (min-width: 768px) {
+  .video-section-heading {
+    width: 215px;
+    display: block;
+  }
+
+  .video-course-header {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    display: flex;
+  }
+
+  .video-course-img {
+    order: 1;
+  }
+
+  .video-course-block {
+    order: 2;
+  }
+
+  .video-course-img1 {
+    display: none;
+  }
+
+  .video-course-img2 {
+    display: block;
+  }
+}
+

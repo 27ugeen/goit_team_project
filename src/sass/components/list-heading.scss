@@ -1,0 +1,23 @@
+.list-heading {
+  font-family: $main-font;
+  font-weight: 600;
+  font-size: $main-font-size;
+  line-height: $main-line-height;
+  margin-bottom: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .list-heading {
+    font-size: $main-font-size-768px;
+    line-height: $main-line-height-768px; 
+    margin-bottom: 11px; 
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .list-heading {
+    font-size: $main-font-size-1200px;
+    line-height: $main-line-height-1200px; 
+    margin-bottom: 11px;
+  }  
+}

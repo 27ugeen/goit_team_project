@@ -1,0 +1,70 @@
+.section-X {
+  &__list .section-X__list-item {
+    width: 405px;
+    padding: 0;
+  }
+
+  // -li- settings
+
+  &__list-item {
+    font-size: $main-font-size;
+    line-height: $main-line-height;
+    font-weight: normal;
+    color: $secondary-txt-color;
+  }
+}
+
+.the-list-title {
+  text-transform: uppercase;
+  font-size: $main-font-size;
+  line-height: $main-line-height;
+  font-weight: 800;
+  color: $main-txt-color;
+  margin: 30px 0 15px 0;
+}
+
+@media screen and (min-width: 768px) {
+  .section-X {
+    &__list .section-X__list-item {
+      width: 225px;
+      //   grid-area: the-list;
+      //   margin-left: 7px;
+      // items above can be used in your grid
+    }
+
+    &__list-item {
+      font-size: $main-font-size-768px;
+      line-height: $main-line-height-768px;
+      margin: 5px 0 18px 0;
+    }
+  }
+
+  .the-list-title {
+    font-size: $main-font-size-768px;
+    line-height: $main-line-height-768px;
+    margin-bottom: 6px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-X {
+    &__list .section-X__list-item {
+      width: 270px;
+      //   grid-area: the-list;
+      //   margin-left: 7px;
+      // items above can be used in your grid
+    }
+
+    &__list-item {
+      font-size: $main-font-size-768px;
+      line-height: $main-line-height-768px;
+      margin: 5px 0 18px 0;
+    }
+  }
+
+  .the-list-title {
+    font-size: $main-font-size-1200px;
+    line-height: $main-line-height-1200px;
+    margin-bottom: 6px;
+  }
+}

@@ -9,28 +9,47 @@
 @import './helpers/mixins';
 @import './helpers/utilis';
 
+// COMPONENTS
+@import './components/black-highlighted-txt';
+@import './components/list-title';
+@import './components/list-heading';
+@import './components/list-1';
+@import './components/ordered-list';
+@import './components/button';
+@import './components/bg-blue';
+@import './components/list_numbers-3';
+@import './components/sub-heading';
+@import './components/heading-black';
+@import './components/heading-white';
+@import './components/paragraph__text';
+@import './components/section-retreats';
+@import './components/slash-note';
+@import './components/sub-heading_1';
+@import './components/sub-heading';
+
 // MEDIA-RULES
 
 @import './media-rules/media-480px';
 @import './media-rules/media-768px';
 @import './media-rules/media-1200px';
 
-// COMPONENTS
+// LAYOYTS
 
-@import './components/header';
-@import './components/banner';
-@import './components/section-one';
-@import './components/section-2-3-4';
-@import './components/section-five';
-@import './components/section-six';
-// @import './components/section-seven-career';
-// @import './components/section-seven-steps';
-@import './components/section-eight';
-@import './components/section-nine-opportunity';
-@import './components/section-ten-enrollcurse';
-@import './components/section-11';
-@import './components/section-12';
-// @import './components/section-13';
-@import './components/section-15-bonuses';
-@import './components/section-16-important';
-@import './components/section-17-register';
+@import './layouts/header';
+@import './layouts/banner';
+@import './layouts/section-one';
+@import './layouts/section-2-3-4';
+@import './layouts/section-five';
+@import './layouts/section-six';
+@import './layouts/section-seven-career';
+@import './layouts/section-seven-steps';
+@import './layouts/section-eight';
+@import './layouts/section-nine-opportunity';
+@import './layouts/section-ten-enrollcurse';
+@import './layouts/section-11';
+@import './layouts/section-12';
+@import './layouts/section-13';
+@import './layouts/section-14';
+@import './layouts/section-15-bonuses';
+@import './layouts/section-16-important';
+@import './layouts/section-17-register';

@@ -1,0 +1,15 @@
+.list-title {
+  font-family: $main-font;
+  color: $main-txt-color;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-align: left;
+  margin-bottom: 30px;
+  @media screen and (min-width: 768px) {
+    @include font-settings(9px, 17px);
+    margin: 0;
+  }
+  @media screen and (min-width: 1200px) {
+    @include font-settings(15px, 23px);
+  }
+}

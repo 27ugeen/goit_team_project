@@ -1,0 +1,14 @@
+.list-sub-heading {
+  font-family: $main-font;
+  font-weight: 400;
+  font-size: $main-font-size;
+  line-height: $main-line-height;
+}
+
+@media screen and (min-width: 768px) {
+  .list-sub-heading {
+    font-size: $main-font-size-768px;
+    line-height: $main-line-height-768px; 
+    margin-bottom: 11px; 
+  }
+}

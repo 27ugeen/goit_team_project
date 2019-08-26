@@ -1,0 +1,71 @@
+.enrollcurse{
+  width: 300px;
+  margin: 0 auto;
+}
+.header__content {
+  font-size: $main-font-size;
+  line-height: 20px;
+  color: $main-txt-color;
+  font-family: $main-font;
+  font-weight: 500;
+  margin-bottom: 30px;
+  padding-left: 27px;
+
+  &:before {
+    left: 0;
+    top: 9%;
+  }
+
+  &__blue {
+      height: 20px;
+      background: $second-bg-line-color;
+    }
+}
+.img__image{
+    width: 100%;
+}
+.features__list{
+    padding-left: 15px;
+    margin-top: 38px;
+    list-style-type: square;
+}
+@media screen and (min-width: 768px){
+  .enrollcurse{
+    width: auto;
+    display: grid;
+    grid-template-areas: "image head"
+                        "image contents";
+    grid-template-rows: 129px 200px;
+  }
+  .enrollcurse__header{
+    order: 1;
+    padding-left: 70px;
+  }
+  .enrollcurse__features{
+    order: 2;
+  }
+  .header__title{
+    margin: 0;
+  }
+  .features__list{
+    margin-top: 25px;
+    padding-left: 85px;
+    margin-bottom: 0;
+  }
+  .enrollcurse > .enrollcurse__header{
+    grid-area: head;
+  }
+  .enrollcurse > .enrollcurse__img{
+    grid-area: image;
+  }
+  .enrollcurse > .enrollcurse__contents{
+    grid-area: contents;
+  }
+  .enrollcurse__img{
+    width: 310px;
+    height: 330px;
+  }
+  .section-X__list-item{
+    margin-bottom: 10px;
+  }
+}
