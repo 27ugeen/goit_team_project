@@ -1,19 +1,25 @@
 .heading-white {
   background-color: $first-bg-line-color;
   color: $main-white-color;
-  height: 22px;
+  font-size: 18px;
+  line-height: 24px;
   font-weight: 800;
   line-height: 1.333;
   text-transform: uppercase;
-  height: 22px;
   font-family: $main-font;
+  &::before {
+    content: '[';
+    margin-right: 10px;
+  }
+  &::after {
+    content: ']';
+    margin-left: 10px;
+  }
   &::before,
   &::after {
-    content: '[';
     color: $main-white-color;
     width: 4px;
     height: 16px;
-    margin-right: 10px;
   }
   @media screen and (min-width: 768px) {
     font-size: 27px;
