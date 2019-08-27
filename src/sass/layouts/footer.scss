@@ -1,0 +1,91 @@
+.location {
+    height: 100px;
+    background-color: #181c27;
+    display: grid;
+    grid-template-columns: 16% 24% 24% 34%;
+}
+
+.location-link {
+    margin: 40px 0 0 18px;
+}
+
+.location-block {
+    margin: 30px 40px 0 0;
+}
+
+.location-title {
+    font-family: $main-font;
+    font-weight: 800;
+    font-size: $slider-numb-font-size-768px;
+    line-height: $micro-line-height;
+    color: $main-white-color;
+    text-transform: uppercase;
+}
+
+.location-text {
+    font-family: $main-font;
+    font-weight: 400;
+    font-size: $main-font-size-768px;
+    line-height: $micro-line-height;
+    color: #a2a2a2;
+}
+
+.location-btn {
+    @extend %btn;
+    font-family: $main-font;
+    font-weight: 800;
+    font-size: $slider-numb-font-size-768px;
+    line-height: $secondary-line-height;
+    color: $main-white-color;
+    text-transform: uppercase;
+    border: 1px solid #1a3353;
+    padding: 0px 10px;
+    margin: 40px 0 0 0;
+}
+
+.security {
+    background-color: #202020;
+    padding-left: 18px;
+}
+
+.security-link {
+    font-family: $main-font;
+    font-weight: 300;
+    font-size: $micro-font-size;
+    line-height: $main-line-height-1200px;
+    color: #65666a;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.location-social {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .location {
+    height: 150px;
+    background-color: #181c27;
+    display: grid;
+    grid-template-columns: 16% 16% 16% 16% 34%;
+  }
+
+  .location-social {
+    display: block;
+  }
+
+  .location-social-list {
+    list-style: none;
+    margin-top: 30px;
+  }
+
+  .location-social-link {
+    font-family: $main-font;
+    color: $main-white-color;
+    font-weight: 800;
+    text-decoration: none;
+    font-size: $slider-numb-font-size-768px;
+    line-height: $micro-line-height;
+
+  }
+}
