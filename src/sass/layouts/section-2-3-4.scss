@@ -1,9 +1,4 @@
 // SECTION---2
-// .wrapper {
-//   margin: 60px auto;
-//   padding: 0;
-//   box-sizing: border-box;
-// }
 
 .dry-facts {
   font-family: $main-font;
@@ -21,7 +16,7 @@
     display: block;
     position: absolute;
     left: 15px;
-    top: 68px;
+    top: 69px;
     content: '';
     width: 25px;
     height: 3px;
@@ -31,14 +26,6 @@
   &__list .dry-facts__list-item {
     width: 390px;
   }
-}
-
-.primary-white-title {
-  text-transform: uppercase;
-  font-size: $secondary-font-size;
-  line-height: $secondary-line-height;
-  font-weight: 800;
-  margin: 0 0 35px 0;
 }
 
 .title-descr {
@@ -62,7 +49,7 @@
   color: $main-txt-color;
 }
 
-.the-list-title {
+.the-list-title-small {
   text-transform: uppercase;
   font-size: $main-font-size;
   line-height: $main-line-height;
@@ -113,23 +100,16 @@
   &__title-2 {
     width: 300px;
   }
-
-  &__list {
-    list-style-type: square;
-  }
-
-  &__list .except-numbers__list-item {
-    width: 405px;
-    padding: 0;
-  }
-
-  &__list-item {
-    font-size: $main-font-size;
-    line-height: $main-line-height;
-    font-weight: normal;
-    color: $secondary-txt-color;
-  }
 }
+
+// .the-list-title {
+//   text-transform: uppercase;
+//   font-size: $main-font-size;
+//   line-height: $main-line-height;
+//   font-weight: 800;
+//   color: $main-txt-color;
+//   margin: 30px 0 15px 0;
+// }
 
 .img-mobile-except-numbers {
   display: block;
@@ -139,25 +119,18 @@
   display: none;
 }
 
-.pre-title {
-  width: 226px;
-}
-
 .bg-black {
   text-align: center;
   background: $first-bg-line-color;
 }
 
-.primary-black-title {
+.black-pre-title {
+  width: 226px;
   text-transform: uppercase;
   font-size: $secondary-font-size;
   line-height: $secondary-line-height;
   font-weight: bold;
   margin: 35px 0 30px 0;
-}
-
-.txt-white {
-  color: $main-white-color;
 }
 
 .pre-descr-title {
@@ -168,7 +141,7 @@
 
 .title-position {
   text-align: center;
-  background: #000000;
+  // background: $first-bg-line-color;
   // bg checkpoint
 }
 
@@ -204,9 +177,14 @@
   }
 
   &__title::before {
+    display: block;
+    position: absolute;
+    content: '';
     left: 15px;
-    top: 92px;
+    top: 93px;
     width: 23px;
+    height: 3px;
+    background: $first-bg-line-color;
   }
 
   &__slider {
@@ -322,16 +300,10 @@
     background: $first-bg-line-color;
   }
 
-  .primary-white-title {
-    font-size: $secondary-font-size-768px;
-    line-height: $secondary-line-height-768px;
-    margin: 0px 0 20px 0;
-  }
-
   .title-descr {
     font-size: $main-font-size-768px;
     line-height: $main-line-height-768px;
-    margin-bottom: 35px;
+    margin: 17px 0 23px;
   }
 
   .the-list-title-big {
@@ -340,11 +312,17 @@
     margin: 0;
   }
 
-  .the-list-title {
+  .the-list-title-small {
     font-size: $main-font-size-768px;
     line-height: $main-line-height-768px;
     margin: 0;
   }
+
+  // .the-list-title {
+  //   font-size: $main-font-size-768px;
+  //   line-height: $main-line-height-768px;
+  //   margin: 0;
+  // }
 
   .descr {
     font-size: $main-font-size-768px;
@@ -366,7 +344,7 @@
     &__title {
       width: 185px;
       padding: 0;
-      margin-bottom: 23px;
+      margin-bottom: 50px;
       position: relative;
       grid-area: main-title;
     }
@@ -441,18 +419,6 @@
       grid-area: main-title;
     }
 
-    &__list-item {
-      font-size: $main-font-size-768px;
-      line-height: $main-line-height-768px;
-      margin: 5px 0 18px 0;
-    }
-
-    &__list .except-numbers__list-item {
-      width: 225px;
-      grid-area: the-list;
-      margin-left: 7px;
-    }
-
     &__part-1 {
       width: 275px;
     }
@@ -472,11 +438,8 @@
     grid-area: img-tabl-pc;
   }
 
-  .pre-title {
+  .black-pre-title {
     width: 72px;
-  }
-
-  .primary-black-title {
     font-size: $main-font-size-768px;
     line-height: $main-line-height-768px;
     margin: 0;
@@ -485,14 +448,14 @@
   .pre-descr-title {
     font-size: $main-font-size-768px;
     line-height: $main-line-height-768px;
+    margin: 0;
   }
 
   .title-position {
+    display: inline;
     font-size: $secondary-font-size-768px;
     line-height: $secondary-line-height-768px;
     text-align: left;
-    margin-bottom: 20px;
-    background: none;
     // bg-checkpoint
   }
 
@@ -507,9 +470,9 @@
     height: 4px;
   }
 
-  .the-list-title {
-    margin-bottom: 6px;
-  }
+  // .the-list-title {
+  //   margin-bottom: 6px;
+  // }
 
   // ---------4
 
@@ -525,7 +488,7 @@
     &__title {
       width: 185px;
       padding: 0;
-      margin-bottom: 25px;
+      margin-bottom: 60px;
       position: relative;
       grid-area: main-title;
     }
